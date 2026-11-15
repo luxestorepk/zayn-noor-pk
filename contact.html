@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact us | SAHAR Atelier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="hdr"></div>
+<section class="page-title"><div class="wrap"><h1>Rabta karein</h1><p>Koi sawal ho to hum se poochein</p></div></section>
+<section class="section">
+  <div class="wrap two" style="align-items:start">
+    <div>
+      <h2>Hum madad ke liye hazir hain</h2>
+      <p>Size, color, delivery ya order ke baare mein koi bhi sawal ho to form bharein. Aap ka paigham seedha hamare WhatsApp par pohanch jayega.</p>
+      <p><b>Auqaat:</b> Rozana subah 10 baje se raat 10 baje tak.</p>
+      <p>Fori jawab ke liye hara WhatsApp button ya chat assistant istemal karein.</p>
+    </div>
+    <form class="formcard" id="contactForm" novalidate>
+      <div class="field"><label for="n">Naam</label><input id="n" name="name" autocomplete="name"><span class="err" data-e="name"></span></div>
+      <div class="field"><label for="p">Mobile number</label><input id="p" name="phone" type="tel" inputmode="tel" placeholder="03001234567" autocomplete="tel"><span class="err" data-e="phone"></span></div>
+      <div class="field"><label for="m">Paigham</label><textarea id="m" name="msg" rows="4"></textarea><span class="err" data-e="msg"></span></div>
+      <button class="btn full" type="submit">Send karein</button>
+    </form>
+  </div>
+</section>
+<div id="ftr"></div>
+<script src="app.js"></script>
+</body>
+</html>
