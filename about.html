@@ -6,26 +6,84 @@
     <title>About Us | ZAYN & NOOR</title>
     <link href="https://googleapis.com" rel="stylesheet">
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; margin: 0; background: #fafaf9; color: #111827; }
-        header { background: #fff; border-bottom: 1px solid #e5e7eb; padding: 16px 20px; }
-        .nav { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-family: 'Playfair Display', serif; font-size: 24px; text-decoration: none; color: #111827; font-weight: 700; }
-        nav a { text-decoration: none; color: #111827; margin-left: 20px; font-weight: 600; font-size: 14px; }
-        .content { max-width: 800px; margin: 60px auto; padding: 40px; background: #fff; border-radius: 12px; border: 1px solid #e5e7eb; line-height: 1.8; }
-        h1 { font-family: 'Playfair Display', serif; font-size: 36px; margin-bottom: 15px; }
+        :root {
+            --primary: #111827;
+            --accent: #b45309;
+            --bg: #fafaf9;
+            --white: #ffffff;
+            --border: #e5e7eb;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
+        body { background: var(--bg); color: var(--primary); }
+        
+        .top-bar { background: var(--primary); color: var(--white); text-align: center; padding: 8px 10px; font-size: 12px; letter-spacing: 0.4px; }
+
+        header { background: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
+        .nav-container { max-width: 1200px; margin: auto; padding: 14px 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+        .brand-logo { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; text-decoration: none; color: var(--primary); letter-spacing: 0.5px; white-space: nowrap; }
+        nav { display: flex; gap: 22px; align-items: center; }
+        nav a { text-decoration: none; color: var(--primary); font-weight: 600; font-size: 14px; white-space: nowrap; }
+        nav a:hover, nav a.active { color: var(--accent); }
+        .cart-btn { background: var(--primary); color: var(--white); padding: 9px 14px; border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: 600; white-space: nowrap; }
+
+        @media (max-width: 640px) {
+            nav { order: 3; width: 100%; justify-content: center; border-top: 1px solid #f3f4f6; padding-top: 10px; gap: 28px; }
+        }
+
+        .content { max-width: 820px; margin: 40px 16px; padding: 32px 24px; background: var(--white); border-radius: 12px; border: 1px solid var(--border); line-height: 1.8; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
+        @media (min-width: 852px) { .content { margin: 60px auto; padding: 45px; } }
+        
+        h1 { font-family: 'Playfair Display', serif; font-size: 32px; margin-bottom: 16px; color: var(--primary); }
+        p { margin-bottom: 16px; color: #374151; font-size: 15px; }
+
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--border); }
+        .feat-box { background: var(--bg); padding: 16px; border-radius: 8px; border: 1px solid var(--border); }
+        .feat-box h3 { font-size: 15px; margin-bottom: 6px; color: var(--accent); }
+        .feat-box p { font-size: 13px; margin: 0; color: #4b5563; line-height: 1.5; }
+
+        footer { background: var(--primary); color: #d1d5db; text-align: center; padding: 28px 16px; margin-top: 60px; font-size: 13px; }
     </style>
 </head>
 <body>
+
+<div class="top-bar">FREE NATIONWIDE DELIVERY | COD, JAZZCASH & EASYPAISA</div>
+
 <header>
-    <div class="nav">
-        <a href="index.html" class="logo">ZAYN & NOOR</a>
-        <nav><a href="index.html">Shop</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></nav>
+    <div class="nav-container">
+        <a href="index.html" class="brand-logo">ZAYN & NOOR</a>
+        <a href="checkout.html" class="cart-btn">Checkout →</a>
+        <nav>
+            <a href="index.html">Shop</a>
+            <a href="about.html" class="active">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </div>
 </header>
+
 <div class="content">
     <h1>Our Heritage & Craftsmanship</h1>
-    <p>Zayn & Noor is a contemporary Pakistani fashion house dedicated to bringing heirloom embroidery, pure fabrics, and modern silhouettes directly to your doorstep.</p>
-    <p>Every outfit is crafted by skilled artisans in Lahore and delivered nationwide across Pakistan with Cash on Delivery, JazzCash, and EasyPaisa convenience.</p>
+    <p>Zayn & Noor is a contemporary Pakistani fashion house dedicated to bringing heirloom embroidery, pure luxury fabrics, and modern silhouettes directly to your doorstep.</p>
+    <p>Every outfit in our collection is crafted by skilled artisans in Lahore with strict quality checks, ensuring timeless elegance for weddings, festive gatherings, and formal occasions.</p>
+
+    <div class="features">
+        <div class="feat-box">
+            <h3>✨ Pure Fabrics</h3>
+            <p>Handpicked raw silk, pure organza, and velvet crafted for lasting comfort.</p>
+        </div>
+        <div class="feat-box">
+            <h3>🚚 Fast Delivery</h3>
+            <p>Free nationwide doorstep shipping across Pakistan within 2 to 4 working days.</p>
+        </div>
+        <div class="feat-box">
+            <h3>💳 Flexible Payment</h3>
+            <p>Pay safely via Cash on Delivery (COD), JazzCash, or EasyPaisa.</p>
+        </div>
+    </div>
 </div>
+
+<footer>
+    © 2026 Zayn & Noor Pakistan. All Rights Reserved.
+</footer>
+
 </body>
 </html>
