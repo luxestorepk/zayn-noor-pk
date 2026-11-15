@@ -9,38 +9,38 @@
         :root { --primary: #111827; --accent: #b45309; --bg: #fafaf9; --white: #ffffff; --border: #d1d5db; --danger: #dc2626; --success: #059669; }
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
         body { background: var(--bg); color: var(--primary); }
-        header { background: var(--white); border-bottom: 1px solid #e5e7eb; padding: 16px 20px; }
+        header { background: var(--white); border-bottom: 1px solid #e5e7eb; padding: 14px 16px; }
         .nav { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-family: 'Playfair Display', serif; font-size: 24px; text-decoration: none; color: var(--primary); font-weight: 700; }
+        .logo { font-family: 'Playfair Display', serif; font-size: 22px; text-decoration: none; color: var(--primary); font-weight: 700; }
 
-        .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; display: grid; grid-template-columns: 1.4fr 1fr; gap: 30px; }
+        .container { max-width: 1100px; margin: 30px auto; padding: 0 16px; display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; }
         @media(max-width: 768px) { .container { grid-template-columns: 1fr; } }
 
-        .box { background: var(--white); padding: 28px; border-radius: 12px; border: 1px solid #e5e7eb; }
-        h2 { font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 20px; }
+        .box { background: var(--white); padding: 24px; border-radius: 12px; border: 1px solid #e5e7eb; }
+        h2 { font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 18px; }
 
         .form-group { margin-bottom: 16px; }
         label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px; }
-        input, select, textarea { width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 14px; outline: none; }
+        input, select, textarea { width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 14px; outline: none; background: #fff; }
         input:focus, select:focus, textarea:focus { border-color: var(--primary); }
-        .error-msg { color: var(--danger); font-size: 12px; margin-top: 4px; display: none; font-weight: 500; }
+        .error-msg { color: var(--danger); font-size: 12px; margin-top: 5px; display: none; font-weight: 600; }
 
         .pay-options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 8px; }
-        .pay-card { border: 1.5px solid var(--border); padding: 12px; border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 600; text-align: center; transition: 0.2s; }
+        .pay-card { border: 1.5px solid var(--border); padding: 12px 8px; border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 600; text-align: center; transition: 0.2s; }
         .pay-card.active { border-color: var(--accent); background: #fffbeb; color: var(--accent); }
-        .account-info { background: #f3f4f6; padding: 12px; border-radius: 6px; font-size: 13px; margin-top: 10px; display: none; line-height: 1.5; }
+        .account-info { background: #f3f4f6; padding: 12px; border-radius: 6px; font-size: 13px; margin-top: 10px; display: none; line-height: 1.5; border-left: 3px solid var(--accent); }
 
         .btn-submit { width: 100%; background: var(--primary); color: white; border: none; padding: 15px; border-radius: 8px; font-size: 15px; font-weight: 700; cursor: pointer; margin-top: 15px; }
         .btn-submit:hover { background: var(--accent); }
         .btn-wa { width: 100%; background: #25D366; color: white; border: none; padding: 14px; border-radius: 8px; font-size: 15px; font-weight: 700; cursor: pointer; margin-top: 10px; }
 
-        .prod-preview { display: flex; gap: 15px; padding-bottom: 18px; border-bottom: 1px solid #e5e7eb; margin-bottom: 18px; }
-        .prod-preview img { width: 80px; height: 95px; object-fit: cover; border-radius: 6px; }
+        .prod-preview { display: flex; gap: 15px; padding-bottom: 18px; border-bottom: 1px solid #e5e7eb; margin-bottom: 18px; align-items: center; }
+        .prod-preview img { width: 80px; height: 95px; object-fit: cover; border-radius: 6px; border: 1px solid #e5e7eb; }
         .sum-row { display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 14px; }
         .total-row { display: flex; justify-content: space-between; font-size: 18px; font-weight: 700; border-top: 1px solid #e5e7eb; padding-top: 14px; margin-top: 14px; }
 
-        .modal { position: fixed; inset: 0; background: rgba(0,0,0,0.6); display: none; align-items: center; justify-content: center; padding: 20px; z-index: 999; }
-        .modal-content { background: white; padding: 35px; border-radius: 12px; max-width: 450px; text-align: center; }
+        .modal { position: fixed; inset: 0; background: rgba(0,0,0,0.65); display: none; align-items: center; justify-content: center; padding: 20px; z-index: 999; }
+        .modal-content { background: white; padding: 32px 24px; border-radius: 12px; max-width: 440px; width: 100%; text-align: center; }
     </style>
 </head>
 <body>
@@ -53,19 +53,20 @@
 </header>
 
 <div class="container">
+    <!-- Customer Information Form -->
     <div class="box">
         <h2>Delivery & Payment Details</h2>
         <form id="order-form" novalidate>
             <div class="form-group">
                 <label>Full Name *</label>
                 <input type="text" id="cust-name" placeholder="e.g. Ayesha Khan">
-                <div class="error-msg" id="err-name">Please enter your full name (at least 3 letters).</div>
+                <div class="error-msg" id="err-name">⚠️ Please enter your full name (minimum 3 letters).</div>
             </div>
 
             <div class="form-group">
                 <label>Mobile / WhatsApp Number (11 Digits) *</label>
                 <input type="tel" id="cust-phone" placeholder="e.g. 03001234567" maxlength="11">
-                <div class="error-msg" id="err-phone">Please enter a valid 11-digit Pakistani mobile number starting with 03.</div>
+                <div class="error-msg" id="err-phone">⚠️ Please enter a valid 11-digit Pakistani number starting with 03.</div>
             </div>
 
             <div class="form-group">
@@ -79,16 +80,17 @@
                     <option value="Multan">Multan</option>
                     <option value="Peshawar">Peshawar</option>
                     <option value="Sialkot">Sialkot</option>
+                    <option value="Gujranwala">Gujranwala</option>
                     <option value="Bahawalpur / Bahawalnagar">Bahawalpur / Bahawalnagar</option>
                     <option value="Other City">Other City</option>
                 </select>
-                <div class="error-msg" id="err-city">Please select your delivery city.</div>
+                <div class="error-msg" id="err-city">⚠️ Please select your delivery city.</div>
             </div>
 
             <div class="form-group">
                 <label>Complete Home / Street Address *</label>
                 <textarea id="cust-address" rows="3" placeholder="House #, Street #, Block / Sector, Nearest Landmark"></textarea>
-                <div class="error-msg" id="err-address">Please enter complete address (minimum 10 characters).</div>
+                <div class="error-msg" id="err-address">⚠️ Please enter complete address (at least 10 characters).</div>
             </div>
 
             <div class="form-group">
@@ -97,7 +99,7 @@
                     <div class="pay-card active" onclick="selectPay('Cash on Delivery (COD)', this)">💵 Cash on Delivery</div>
                     <div class="pay-card" onclick="selectPay('JazzCash', this)">📱 JazzCash</div>
                     <div class="pay-card" onclick="selectPay('EasyPaisa', this)">📲 EasyPaisa</div>
-                    <div class="pay-card" onclick="selectPay('WhatsApp Order', this)">💬 Confirm on WhatsApp</div>
+                    <div class="pay-card" onclick="selectPay('WhatsApp Order', this)">💬 WhatsApp Order</div>
                 </div>
                 <div class="account-info" id="wallet-details"></div>
             </div>
@@ -107,6 +109,7 @@
         </form>
     </div>
 
+    <!-- Order Summary -->
     <div class="box" style="height:fit-content;">
         <h2>Order Summary</h2>
         <div class="prod-preview" id="summary-product"></div>
@@ -116,54 +119,45 @@
     </div>
 </div>
 
+<!-- Order Confirmation Modal -->
 <div class="modal" id="success-modal">
     <div class="modal-content">
         <div style="font-size:48px; margin-bottom:10px;">✅</div>
         <h2 style="margin-bottom:10px;">Order Confirmed!</h2>
-        <p id="modal-text" style="font-size:14px; color:#4b5563; line-height:1.6; margin-bottom:20px;"></p>
-        <a href="index.html" style="background:var(--primary); color:white; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:600;">Continue Shopping</a>
+        <p id="modal-text" style="font-size:14px; color:#4b5563; line-height:1.6; margin-bottom:22px;"></p>
+        <a href="index.html" style="display:inline-block; background:var(--primary); color:white; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:600;">Continue Shopping</a>
     </div>
 </div>
 
 <script>
+    // APNA WHATSAPP NUMBER YAHAN LIKHEIN (Screen par show nahi hoga)
     const WHATSAPP_NUMBER = "923716649231";
     let selectedPayment = "Cash on Delivery (COD)";
 
+    // 100% Built-in Fallback Image
+    const fallbackArt = "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(
+        `<svg xmlns="http://w3.org" width="200" height="240" viewBox="0 0 200 240">
+            <rect width="200" height="240" fill="#064e3b"/>
+            <rect x="12" y="12" width="176" height="216" fill="none" stroke="#fbbf24" stroke-width="1.5"/>
+            <text x="100" y="125" text-anchor="middle" fill="#fbbf24" font-family="Georgia, serif" font-size="16" font-weight="bold">ZAYN &amp; NOOR</text>
+        </svg>`
+    );
+
     const item = JSON.parse(localStorage.getItem("selectedProduct")) || {
-        name: "Emerald Silk Embroidered 3PC",
+        name: "Emerald Green Embroidered 3PC",
         price: 6850,
-        image: "https://unsplash.com",
+        image: fallbackArt,
         size: "M",
         color: "Emerald Green"
     };
 
     document.getElementById("summary-product").innerHTML = `
-        <img src="${item.image}" alt="${item.name}">
+        <img src="${item.image}" alt="${item.name}" onerror="this.onerror=null;this.src='${fallbackArt}';">
         <div>
             <h4 style="font-size:16px; margin-bottom:5px;">${item.name}</h4>
             <p style="font-size:13px; color:#6b7280;">Size: <strong>${item.size}</strong> | Color: <strong>${item.color}</strong></p>
-            <p style="font-size:14px; font-weight:700; color:var(--accent); margin-top:6px;">Rs. ${item.price.toLocaleString()}</p>
+            <p style="font-size:15px; font-weight:700; color:var(--accent); margin-top:6px;">Rs. ${item.price.toLocaleString()}</p>
         </div>
     `;
     document.getElementById("sub-price").innerText = "Rs. " + item.price.toLocaleString();
-    document.getElementById("tot-price").innerText = "Rs. " + item.price.toLocaleString();
-
-    function selectPay(method, el) {
-        selectedPayment = method;
-        document.querySelectorAll(".pay-card").forEach(c => c.classList.remove("active"));
-        el.classList.add("active");
-
-        const info = document.getElementById("wallet-details");
-        if (method === "JazzCash") {
-            info.style.display = "block";
-            info.innerHTML = "<strong>JazzCash Account Title:</strong> Zayn & Noor Store<br>Order place karne ke baad WhatsApp par payment screenshot share karein.";
-        } else if (method === "EasyPaisa") {
-            info.style.display = "block";
-            info.innerHTML = "<strong>EasyPaisa Account Title:</strong> Zayn & Noor Store<br>Order place karne ke baad WhatsApp par receipt bhej dein.";
-        } else {
-            info.style.display = "none";
-        }
-    }
-
-    function validateAndPlaceOrder(sendToWhatsApp) {
-                  
+    
