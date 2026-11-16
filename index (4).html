@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0f3026">
+<title>SAHAR Atelier | Pakistani Luxury Lawn, Formal and Winter Wear</title>
+<meta name="description" content="Premium Pakistani suits online. Cash on Delivery, Easypaisa and JazzCash. Delivery all over Pakistan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--deep:#0f3026;--deep2:#0a2019;--gold:#b8934a;--gold2:#d9bd7e;--ivory:#f7f1e5;--paper:#fffdf8;--ink:#1a2420;--mute:#66706a;--line:#e5dccb;--rose:#8c3d4d;--ok:#2f7a55;--low:#b5651d;--bad:#b13a3a;
+--serif:"Cormorant Garamond",Georgia,serif;--sans:"Jost",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer;border:0;background:none}
+[hidden]{display:none!important}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.wrap{width:min(1200px,92%);margin-inline:auto}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.08}
+h1{font-size:clamp(2.8rem,8vw,5.6rem)}h2{font-size:clamp(2.1rem,5vw,3.2rem)}h3{font-size:1.4rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--deep);color:#fff;padding:14px 28px;border-radius:999px;font-weight:500;letter-spacing:.3px;transition:.2s}
+.btn:hover{background:var(--deep2);transform:translateY(-1px)}.btn:active{transform:scale(.98)}
+.btn.gold{background:var(--gold);color:#fff}.btn.gold:hover{background:#9f7d3b}
+.btn.ghost{background:transparent;color:var(--deep);border:1.5px solid var(--deep)}.btn.ghost:hover{background:var(--deep);color:#fff}
+.btn.light{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.7)}.btn.light:hover{background:#fff;color:var(--deep)}
+.btn[disabled]{opacity:.4;cursor:not-allowed;transform:none}.btn.full{width:100%}
+
+/* announcement + header */
+.announce{background:var(--deep2);color:var(--gold2);text-align:center;font-size:.84rem;padding:8px 12px;letter-spacing:.3px}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,253,248,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:14px;height:74px}
+.logo{font-family:var(--serif);font-size:2rem;font-weight:700;letter-spacing:4px;color:var(--deep);line-height:1;display:flex;flex-direction:column}
+.logo small{font-family:var(--sans);font-size:.6rem;letter-spacing:5px;color:var(--gold);font-weight:500;margin-top:3px}
+.hs{display:flex;align-items:center;background:var(--ivory);border:1px solid var(--line);border-radius:999px;padding:0 6px 0 18px;flex:1;max-width:440px;margin:0 auto}
+.hs input{border:0;background:none;outline:0;padding:11px 0;width:100%;font-size:.92rem}
+.hs button{width:34px;height:34px;display:grid;place-items:center;color:var(--deep)}
+.icons{display:flex;align-items:center;gap:8px}
+.iconbtn{position:relative;width:44px;height:44px;display:grid;place-items:center;border-radius:50%;color:var(--deep)}
+.iconbtn:hover{background:var(--ivory)}
+.iconbtn svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8}
+.iconbtn b{position:absolute;top:3px;right:1px;background:var(--rose);color:#fff;border-radius:999px;min-width:18px;height:18px;font-size:.68rem;display:grid;place-items:center;font-weight:600;padding:0 4px}
+.cartbtn{background:var(--deep);color:#fff;padding:10px 18px;border-radius:999px;font-size:.9rem;display:flex;gap:8px;align-items:center;font-weight:500}
+.cartbtn b{background:var(--gold);border-radius:999px;min-width:22px;height:22px;display:grid;place-items:center;font-size:.75rem}
+.subbar{background:var(--paper);border-bottom:1px solid var(--line)}
+.subbar .hs{display:none}
+.tabs{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;justify-content:center}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{white-space:nowrap;flex:none;padding:14px 18px;font-size:.93rem;font-weight:500;border-bottom:2px solid transparent}
+.tabs a:hover,.tabs a.on{border-color:var(--gold);color:var(--deep)}
+.tabs a.hot{color:var(--rose)}
+
+/* hero */
+.hero{background:var(--deep);color:#fff;position:relative;overflow:hidden;padding:70px 0 90px}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 30%,rgba(184,147,74,.22),transparent 55%),repeating-linear-gradient(45deg,rgba(255,255,255,.025) 0 2px,transparent 2px 22px)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.hero h1 em{font-style:italic;color:var(--gold2);font-weight:500}
+.hero .lead{font-size:1.18rem;color:#cfd8d2;max-width:46ch;margin:22px 0 32px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.proof{display:flex;gap:14px;align-items:center;margin-top:36px;color:#cfd8d2;font-size:.92rem}
+.stars{display:inline-block;letter-spacing:2px;font-size:1.05rem;background:linear-gradient(90deg,var(--gold) var(--r),#cfc7b3 var(--r));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .stars{background:linear-gradient(90deg,var(--gold2) var(--r),#6c7f75 var(--r));-webkit-background-clip:text;background-clip:text}
+.art{position:relative;max-width:430px;margin-left:auto;width:100%}
+.art::before{content:"";position:absolute;inset:-14px -14px 0 -14px;border:1.5px solid var(--gold);border-radius:999px 999px 0 0;pointer-events:none}
+.art .badge{position:absolute;left:-18px;bottom:36px;background:#fff;color:var(--ink);padding:12px 18px;border-radius:14px;box-shadow:0 14px 34px rgba(0,0,0,.3);font-size:.85rem;z-index:2}
+.art .badge b{font-family:var(--serif);font-size:1.5rem;color:var(--deep);display:block;line-height:1.1}
+.arch{border-radius:999px 999px 0 0;overflow:hidden;position:relative;background:linear-gradient(160deg,#d8c79a,#2b5646)}
+.art .arch{aspect-ratio:3/4}
+.ph{position:relative;overflow:hidden;background:linear-gradient(160deg,#dccfaa,#2b5646)}
+.ph::before,.arch::before{content:attr(data-label);position:absolute;inset:0;display:grid;place-items:center;font-family:var(--serif);font-size:1.6rem;color:rgba(255,255,255,.7);text-align:center;padding:10px}
+.ph img,.arch img{position:relative;width:100%;height:100%;object-fit:cover;object-position:center top}
+
+/* marquee */
+.marq{background:var(--gold);color:#fff;overflow:hidden;white-space:nowrap;padding:12px 0;font-weight:500;letter-spacing:.4px}
+.marq div{display:inline-block;animation:mv 28s linear infinite}
+.marq span{margin:0 28px}
+@keyframes mv{to{transform:translateX(-50%)}}
+
+/* sections */
+.sec{padding:84px 0}.sec.alt{background:var(--ivory)}
+.head{text-align:center;margin-bottom:46px}.head p{color:var(--mute);margin:12px auto 0;max-width:56ch}
+.head .rule{width:60px;height:2px;background:var(--gold);margin:16px auto 0}
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.cat{text-align:center;display:block}
+.cat .arch{aspect-ratio:3/4;margin-bottom:16px;transition:transform .35s}.cat:hover .arch{transform:translateY(-8px)}
+.cat h3{font-size:1.6rem}.cat span{color:var(--mute);font-size:.9rem}
+
+/* products */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.card{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;transition:box-shadow .3s}
+.card:hover{box-shadow:0 18px 40px rgba(15,48,38,.12)}
+.card .ph{aspect-ratio:3/4}.card .ph img{transition:transform .6s}.card:hover .ph img{transform:scale(1.05)}
+.tag{position:absolute;top:12px;left:12px;background:var(--rose);color:#fff;font-size:.78rem;padding:4px 12px;border-radius:999px;z-index:2;font-weight:500}
+.cb{padding:16px;display:flex;flex-direction:column;gap:10px;flex:1}
+.cb h3{font-size:1.32rem}.fab{font-size:.85rem;color:var(--mute);margin-top:-6px}
+.rate small{color:var(--mute);margin-left:6px;font-size:.82rem}
+.pr b{font-size:1.25rem;color:var(--deep);font-weight:600}.pr s{color:var(--mute);margin-left:8px;font-size:.9rem}.pr b,.pr s{white-space:nowrap}
+.lbl{font-size:.84rem;color:var(--mute);display:block;margin-bottom:6px}.lbl em{font-style:normal;color:var(--ink);font-weight:600}
+.sw,.sz{display:flex;gap:8px;flex-wrap:wrap}
+.sw button{width:28px;height:28px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--line)}.sw button.on{box-shadow:0 0 0 2px var(--deep)}
+.sz button{min-width:42px;height:38px;border:1px solid var(--line);border-radius:6px;font-size:.88rem;background:#fff;font-weight:500}
+.sz button.on{background:var(--deep);color:#fff;border-color:var(--deep)}
+.sz button:disabled{color:#b9b4a6;text-decoration:line-through;cursor:not-allowed;background:#f4f1ea}
+.st{font-size:.86rem;font-weight:500;display:flex;align-items:center;gap:7px}.st::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+.st.ok{color:var(--ok)}.st.low{color:var(--low)}.st.out{color:var(--bad)}
+.acts{display:grid;gap:8px;margin-top:auto;padding-top:6px}.acts .btn{padding:12px 14px;font-size:.92rem}
+.wa-ic{width:18px;height:18px;fill:currentColor}
+
+/* toolbar */
+.titlebar{background:var(--deep);color:#fff;text-align:center;padding:56px 0 50px;position:relative;overflow:hidden}
+.titlebar::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 0,rgba(184,147,74,.25),transparent 60%)}
+.titlebar .wrap{position:relative}.titlebar p{color:#cfd8d2;margin-top:10px}
+.toolbar{display:flex;gap:14px;flex-wrap:wrap;justify-content:space-between;align-items:center;margin-bottom:12px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{padding:9px 20px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:.92rem;font-weight:500}
+.chip.on{background:var(--deep);color:#fff;border-color:var(--deep)}
+.tools{display:flex;gap:10px;flex-wrap:wrap}
+.tools input,.tools select,.field input,.field select,.field textarea{border:1px solid var(--line);background:#fff;border-radius:10px;padding:12px 14px;width:100%}
+.tools input{width:230px}.tools select{width:auto}
+.count{color:var(--mute);font-size:.9rem;margin-bottom:20px}
+.empty{text-align:center;color:var(--mute);padding:60px 0;grid-column:1/-1}
+
+/* misc sections */
+.feats{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;text-align:center}
+.feat{padding:26px 18px;border:1px solid var(--line);background:#fff}
+.feat h3{margin-bottom:6px;color:var(--deep)}.feat p{color:var(--mute);font-size:.95rem}
+.sale{background:var(--deep);color:#fff;text-align:center;padding:64px 0;position:relative;overflow:hidden}
+.sale::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 50%,rgba(184,147,74,.25),transparent 50%),radial-gradient(circle at 85% 50%,rgba(140,61,77,.3),transparent 50%)}
+.sale .wrap{position:relative}.sale p{color:#cfd8d2;margin:10px 0 24px}
+.cd{display:flex;gap:14px;justify-content:center;margin-bottom:28px}
+.cd div{background:rgba(255,255,255,.08);border:1px solid rgba(217,189,126,.5);border-radius:12px;padding:12px 6px;min-width:76px}
+.cd b{display:block;font-family:var(--serif);font-size:2.2rem;line-height:1;color:var(--gold2)}.cd span{font-size:.78rem;color:#cfd8d2}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.two .arch{aspect-ratio:3/4;max-width:430px}.two p{color:#48534d;margin-top:16px}
+.nums{display:flex;gap:38px;margin-top:30px;flex-wrap:wrap}.nums b{display:block;font-family:var(--serif);font-size:2.4rem;color:var(--deep)}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rev{background:#fff;border:1px solid var(--line);padding:28px}
+.rev p{margin:12px 0 16px;font-family:var(--serif);font-size:1.3rem;line-height:1.35}.rev span{color:var(--mute);font-size:.88rem}
+.gal{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.gal .ph{aspect-ratio:1}
+details{background:#fff;border:1px solid var(--line);padding:16px 20px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:500;list-style:none;display:flex;justify-content:space-between}
+summary::after{content:"+";color:var(--gold);font-size:1.3rem;line-height:1}details[open] summary::after{content:"−"}
+details p{margin-top:10px;color:var(--mute)}
+
+/* forms */
+.formcard{background:#fff;border:1px solid var(--line);padding:30px}
+.field{margin-bottom:16px}.field label{display:block;font-size:.88rem;margin-bottom:6px;font-weight:500}
+.field .bad{border-color:var(--bad);background:#fff6f6}.err{display:block;color:var(--bad);font-size:.8rem;min-height:1em;margin-top:4px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pay{display:grid;gap:10px;margin-bottom:14px}
+.pay label{display:flex;gap:12px;align-items:center;border:1px solid var(--line);border-radius:12px;padding:14px 16px;cursor:pointer;background:#fff;font-weight:500}
+.pay input{accent-color:var(--deep);width:18px;height:18px}.pay label.on{border-color:var(--deep);background:#eff5f1}
+.paybox{background:var(--ivory);border-left:3px solid var(--gold);padding:14px 16px;font-size:.92rem;margin-bottom:16px}
+.co{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:start}
+.sum{background:#fff;border:1px solid var(--line);padding:26px;position:sticky;top:100px}.sum h3{margin-bottom:14px}
+.line{display:flex;justify-content:space-between;gap:12px;font-size:.94rem;padding:9px 0;border-bottom:1px dashed var(--line)}
+.line small{color:var(--mute);display:block}.tot{font-size:1.2rem;font-weight:600;color:var(--deep);border:0;padding-top:14px}
+.okbox{text-align:center;padding:60px 20px;grid-column:1/-1}.okbox h2{margin:12px 0}.okbox p{max-width:52ch;margin:0 auto 22px;color:var(--mute)}
+
+/* drawer */
+.ov{position:fixed;inset:0;background:rgba(8,18,14,.55);opacity:0;pointer-events:none;transition:opacity .25s;z-index:80}.ov.show{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(430px,100%);background:var(--paper);z-index:90;transform:translateX(100%);transition:transform .3s;display:flex;flex-direction:column}.drawer.show{transform:none}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;border-bottom:1px solid var(--line)}.dh button{font-size:1.8rem;line-height:1}
+.ship{padding:12px 20px;background:var(--ivory);font-size:.86rem}.bar2{height:6px;background:#e3d8bf;border-radius:9px;margin-top:8px;overflow:hidden}.bar2 i{display:block;height:100%;background:var(--gold);transition:width .3s}
+.db{flex:1;overflow:auto;padding:6px 20px}.df{padding:18px 20px;border-top:1px solid var(--line)}
+.ci{display:grid;grid-template-columns:72px 1fr auto;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);align-items:center}
+.ci .ph{aspect-ratio:3/4}.ci h4{font-size:1.12rem}.ci small{color:var(--mute);display:block}
+.qty{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;margin-top:6px}.qty button{width:30px;height:30px}.qty span{min-width:22px;text-align:center;font-size:.9rem}
+.rm{color:var(--bad);font-size:.8rem}
+
+/* footer */
+footer{background:var(--deep2);color:#cdd6d0;padding:60px 0 24px}
+.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:36px}
+footer .logo{color:#fff;margin-bottom:14px}footer h4{font-size:1.3rem;color:#fff;margin-bottom:12px}
+footer a{display:block;padding:4px 0;color:#cdd6d0}footer a:hover{color:var(--gold2)}
+.copy{border-top:1px solid rgba(255,255,255,.14);margin-top:36px;padding-top:18px;font-size:.84rem;text-align:center;color:#8fa096}
+
+/* floating */
+.toast{position:fixed;left:50%;bottom:96px;transform:translate(-50%,20px);background:var(--ink);color:#fff;padding:12px 22px;border-radius:999px;font-size:.92rem;opacity:0;pointer-events:none;transition:.25s;z-index:160;max-width:90%;text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}
+.wa-float{position:fixed;left:16px;bottom:16px;height:56px;border-radius:999px;background:#25a05a;display:flex;align-items:center;gap:10px;padding:0 20px 0 14px;z-index:60;box-shadow:0 8px 22px rgba(0,0,0,.28);color:#fff;font-weight:600}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+.chat-fab{position:fixed;right:16px;bottom:16px;height:56px;background:var(--gold);color:#fff;padding:0 22px;border-radius:999px;z-index:60;box-shadow:0 8px 22px rgba(0,0,0,.28);font-weight:600}
+.chat{position:fixed;right:16px;bottom:16px;width:min(370px,calc(100% - 32px));height:min(540px,calc(100% - 100px));background:#fff;border:1px solid var(--line);border-radius:18px;z-index:100;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.32)}
+.ch{background:var(--deep);color:#fff;padding:14px 16px;display:flex;justify-content:space-between;align-items:center}.ch b{font-family:var(--serif);font-size:1.3rem}.ch small{display:block;color:var(--gold2);font-size:.75rem}.ch button{color:#fff;font-size:1.6rem;line-height:1}
+.cm{flex:1;overflow:auto;padding:14px;display:flex;flex-direction:column;gap:10px;background:var(--paper)}
+.m{max-width:86%;padding:10px 14px;border-radius:14px;font-size:.92rem}.m.bot{background:#fff;border:1px solid var(--line);align-self:flex-start;border-bottom-left-radius:4px}.m.me{background:var(--deep);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}.m a{color:var(--gold);font-weight:600;text-decoration:underline}
+.qr{display:flex;gap:6px;flex-wrap:wrap;padding:8px 12px;border-top:1px solid var(--line)}.qr button{border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:.8rem;background:#fff}
+.cf{display:flex;border-top:1px solid var(--line)}.cf input{flex:1;border:0;padding:14px;outline:0;min-width:0}.cf button{padding:0 18px;color:var(--deep);font-weight:600}
+
+/* side menu */
+.side{position:fixed;top:0;left:0;height:100%;width:min(340px,88%);background:var(--paper);z-index:90;transform:translateX(-100%);transition:transform .3s;display:flex;flex-direction:column}
+.side.show{transform:none}
+.sh{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;background:var(--deep);color:#fff}
+.sh .logo{color:#fff;font-size:1.7rem;margin:0}.sh button{font-size:2rem;color:#fff;line-height:1}
+.sb{flex:1;overflow:auto;padding:4px 0 20px}
+.sb h5{font-family:var(--sans);font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);padding:18px 22px 6px;font-weight:600}
+.sb a{display:flex;justify-content:space-between;align-items:center;padding:12px 22px;font-weight:500;border-bottom:1px solid #f0e9da}
+.sb a::after{content:"›";color:var(--gold);font-size:1.2rem}.sb a:hover{background:var(--ivory)}
+.sf{padding:16px 20px;border-top:1px solid var(--line);background:var(--ivory);font-size:.85rem;color:var(--mute)}
+.sf .btn{margin-bottom:10px;padding:11px 16px}
+/* wishlist heart + quick view */
+.heart{position:absolute;top:10px;right:10px;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.93);display:grid;place-items:center;z-index:3;color:var(--deep);box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.heart svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2}.heart.on svg{fill:var(--rose);stroke:var(--rose)}
+.card .ph{cursor:zoom-in}
+.qvhint{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(10,32,25,.7));color:#fff;text-align:center;font-size:.8rem;padding:22px 0 8px;opacity:0;transition:.3s;z-index:2}
+.card:hover .qvhint{opacity:1}
+.modal{position:fixed;inset:0;background:rgba(8,18,14,.62);z-index:140;display:grid;place-items:center;padding:14px;overflow:auto}
+.mbox{background:var(--paper);width:min(900px,100%);max-height:94vh;overflow:auto;position:relative}
+.mx{position:absolute;top:10px;right:12px;font-size:1.9rem;line-height:1;z-index:6;color:var(--deep);background:rgba(255,255,255,.92);width:40px;height:40px;border-radius:50%}
+.qv .card{display:grid;grid-template-columns:1fr 1fr;border:0}.qv .card .ph{aspect-ratio:auto;min-height:100%;cursor:default}
+.qd{padding:4px 22px 24px;border-top:1px solid var(--line)}.qd h4{margin:16px 0 6px;font-size:1.3rem}.qd li{margin-left:18px;color:#48534d;font-size:.93rem;margin-bottom:4px}
+/* info pages */
+.prose{max-width:800px;margin:0 auto}.prose h2{font-size:2rem;margin:34px 0 8px;color:var(--deep)}.prose h2:first-child{margin-top:0}
+.prose p,.prose li{color:#48534d;margin-bottom:10px}.prose ul{margin-left:22px}
+.tblw{overflow-x:auto;margin:18px 0}table.tbl{width:100%;border-collapse:collapse;background:#fff;min-width:420px}
+.tbl th,.tbl td{border:1px solid var(--line);padding:13px;text-align:center}.tbl th{background:var(--deep);color:#fff;font-weight:500}.tbl tr:nth-child(even) td{background:var(--ivory)}
+.tl{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:28px 0 10px}
+.tl div{text-align:center;font-size:.78rem;color:var(--mute)}
+.tl i{width:34px;height:34px;border-radius:50%;background:var(--line);margin:0 auto 8px;display:grid;place-items:center;font-style:normal;color:#fff;font-weight:600}
+.tl .done{color:var(--ink);font-weight:500}.tl .done i{background:var(--ok)}.tl .now i{box-shadow:0 0 0 5px rgba(47,122,85,.2)}
+.trackres{margin-top:22px;border-top:1px dashed var(--line);padding-top:18px}
+.news{display:flex;gap:8px;margin-top:16px}
+.news input{flex:1;min-width:0;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;border-radius:999px;padding:12px 16px}
+.news input::placeholder{color:#9db0a6}.news button{background:var(--gold);color:#fff;border-radius:999px;padding:0 22px;font-weight:500}
+.paybadges{display:flex;gap:8px;flex-wrap:wrap;margin-top:30px;justify-content:center}
+.paybadges span{border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:6px 14px;font-size:.8rem;color:#cdd6d0}
+.typing{display:inline-flex;gap:4px}.typing i{width:6px;height:6px;border-radius:50%;background:var(--mute);animation:bl 1s infinite}.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes bl{0%,60%,100%{opacity:.25}30%{opacity:1}}
+@media(max-width:1000px){.grid,.cats{grid-template-columns:repeat(2,1fr)}.feats{grid-template-columns:repeat(2,1fr)}.reviews{grid-template-columns:1fr}.co{grid-template-columns:1fr}.sum{position:static}.gal{grid-template-columns:repeat(3,1fr)}.fg{grid-template-columns:1fr 1fr}}
+@media(max-width:860px){
+ .bar{height:64px;gap:6px}.bar .hs{display:none}.logo{margin:0 auto}.logo{font-size:1.75rem}
+ .subbar .hs{display:flex;margin:12px 0 2px;max-width:none}.tabs{justify-content:flex-start;margin-inline:-4%;padding-inline:3%}.tabs a{padding:13px 14px}
+ .cartbtn{padding:9px 14px}
+ .hero{padding:44px 0 64px}.hero .wrap,.two{grid-template-columns:1fr;gap:40px}.art{margin:0 auto;max-width:340px}.art .badge{left:-6px}.two .arch{margin:0 auto}
+ .sec{padding:56px 0}}
+@media(max-width:560px){.grid{gap:10px}.cb{padding:11px;gap:8px}.cb h3{font-size:1.1rem}.acts .btn{font-size:.8rem;padding:10px 6px}.row2{grid-template-columns:1fr}.logo small{display:none}.tools,.tools input,.tools select{width:100%}.cats{gap:12px}.feats{grid-template-columns:1fr}.fg{grid-template-columns:1fr}.gal{grid-template-columns:repeat(2,1fr)}.cd div{min-width:64px}.wa-float span{display:none}.wa-float{padding:0 13px}.formcard{padding:20px}}
+@media(max-width:700px){.qv .card{grid-template-columns:1fr}.qv .card .ph{aspect-ratio:3/4}.tl div{font-size:.68rem}.tl i{width:28px;height:28px}.news{flex-direction:column}.news button{padding:12px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+<script>var EXT=["jpg","jpeg","png","webp"];window.imgFb=function(el){var i=(+el.getAttribute("data-i")||0)+1;if(i<EXT.length){el.setAttribute("data-i",i);el.src="images/"+el.getAttribute("data-n")+"."+EXT[i]}else{el.remove()}};</script>
+</head>
+<body>
+<noscript><p style="padding:20px;text-align:center">Please enable JavaScript to view this store.</p></noscript>
+
+<div class="announce">Free delivery on orders over Rs. 10,000 &nbsp;|&nbsp; Cash on Delivery all over Pakistan</div>
+<div class="topbar"><div class="wrap bar">
+  <button class="iconbtn" id="menuBtn" aria-label="Open menu"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  <a class="logo" href="#home">SAHAR<small>ATELIER</small></a>
+  <form class="hs" role="search"><input placeholder="Search suits, fabrics, colours..." aria-label="Search"><button aria-label="Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.500-3.500"/></svg></button></form>
+  <div class="icons">
+    <a class="iconbtn" href="#wishlist" aria-label="Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7.500-4.600-9.400-9.300C1.300 8.400 3.200 5 6.600 5c2 0 3.600 1.100 5.400 3.200C13.800 6.100 15.400 5 17.400 5c3.400 0 5.300 3.400 4 6.700C19.500 16.400 12 21 12 21z"/></svg><b id="wishCount" hidden>0</b></a>
+    <button class="cartbtn" id="cartBtn">Cart <b id="cartCount">0</b></button>
+  </div>
+</div></div>
+<div class="subbar"><div class="wrap">
+  <form class="hs" role="search"><input placeholder="Search suits, fabrics, colours..." aria-label="Search"><button aria-label="Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.500-3.500"/></svg></button></form>
+  <nav class="tabs" id="tabs" aria-label="Main">
+    <a href="#home" data-p="home">Home</a><a href="#collection" data-cat="All">All suits</a><a href="#collection" data-cat="New">New arrivals</a>
+    <a href="#collection" data-cat="Lawn">Lawn</a><a href="#collection" data-cat="Formal">Formal</a><a href="#collection" data-cat="Winter">Winter</a><a href="#collection" data-cat="Casual">Casual</a>
+    <a href="#collection" data-cat="Sale" class="hot">Sale</a><a href="#about" data-p="about">About us</a><a href="#contact" data-p="contact">Contact us</a>
+  </nav>
+</div></div>
+
+<main>
+<!-- HOME -->
+<div class="page" id="pg-home">
+  <section class="hero"><div class="wrap">
+    <div>
+      <h1>Where tradition wears <em>luxury</em></h1>
+      <p class="lead">Hand-finished Pakistani lawn, chiffon and velvet suits. Pick your colour and size, pay your way and get it at your door in 3 to 5 days.</p>
+      <div class="cta"><a class="btn gold" href="#collection">Shop the collection</a><a class="btn light" href="#about">Our story</a></div>
+      <div class="proof"><span class="stars" style="--r:96%">★★★★★</span><span>4.8 rating from 5,000+ happy customers</span></div>
+    </div>
+    <div class="art"><div class="arch" data-label="SAHAR"><img data-n="hero" src="images/hero.jpg" alt="Luxury Pakistani suit" onerror="imgFb(this)"></div>
+      <div class="badge"><b>Rs. 6,490</b>Lawn suits from</div></div>
+  </div></section>
+
+  <div class="marq"><div id="marq"></div></div>
+
+  <section class="sec"><div class="wrap">
+    <div class="head"><h2>Shop by season</h2><div class="rule"></div><p>From breezy summer lawn to heavy wedding formals.</p></div>
+    <div class="cats" id="cats"></div>
+  </div></section>
+
+  <section class="sec alt"><div class="wrap">
+    <div class="head"><h2>New arrivals</h2><div class="rule"></div><p>See colour, size, price and stock right on every suit.</p></div>
+    <div class="grid" id="featured"></div>
+    <div style="text-align:center;margin-top:38px"><a class="btn ghost" href="#collection" data-cat="All">View all suits</a></div>
+  </div></section>
+
+  <section class="sale"><div class="wrap">
+    <h2>Weekend sale: up to 20% off</h2>
+    <p>Selected lawn, formal and winter suits. Offer ends in</p>
+    <div class="cd"><div><b id="cdD">00</b><span>Days</span></div><div><b id="cdH">00</b><span>Hours</span></div><div><b id="cdM">00</b><span>Minutes</span></div><div><b id="cdS">00</b><span>Seconds</span></div></div>
+    <a class="btn gold" href="#collection">Shop the sale</a>
+  </div></section>
+
+  <section class="sec"><div class="wrap feats">
+    <div class="feat"><h3>Cash on Delivery</h3><p>Check your suit first, pay the rider. Available in every city.</p></div>
+    <div class="feat"><h3>Easypaisa and JazzCash</h3><p>Pay securely from your mobile wallet in a minute.</p></div>
+    <div class="feat"><h3>7-day exchange</h3><p>Size not right? Swap it, no stress.</p></div>
+    <div class="feat"><h3>Fast delivery</h3><p>3 to 5 working days, tracked on WhatsApp.</p></div>
+  </div></section>
+
+  <section class="sec alt"><div class="wrap">
+    <div class="head"><h2>Loved by our customers</h2><div class="rule"></div></div>
+    <div class="reviews">
+      <div class="rev"><span class="stars" style="--r:100%">★★★★★</span><p>The fabric is exactly like the photos and the embroidery is stunning. I got so many compliments.</p><span>Ayesha K., Lahore</span></div>
+      <div class="rev"><span class="stars" style="--r:100%">★★★★★</span><p>Arrived in 4 days and the size was perfect. Packaging felt really premium.</p><span>Hina R., Karachi</span></div>
+      <div class="rev"><span class="stars" style="--r:92%">★★★★★</span><p>Ordered a formal for a wedding. Everyone asked where it was from. I will order again.</p><span>Mariam S., Islamabad</span></div>
+    </div>
+  </div></section>
+
+  <section class="sec"><div class="wrap">
+    <div class="head"><h2>Customer favourites</h2><div class="rule"></div></div>
+    <div class="gal" id="gal"></div>
+  </div></section>
+</div>
+
+<!-- COLLECTION -->
+<div class="page" id="pg-collection" hidden>
+  <section class="titlebar"><div class="wrap"><h1 style="font-size:clamp(2.4rem,6vw,4rem)">The Collection</h1><p>Choose your colour and size, then add to cart or order on WhatsApp</p></div></section>
+  <section class="sec" style="padding-top:40px"><div class="wrap">
+    <div class="toolbar">
+      <div class="chips" id="chips">
+        <button class="chip" data-cat="All">All</button><button class="chip" data-cat="Lawn">Lawn</button><button class="chip" data-cat="Formal">Formal</button><button class="chip" data-cat="Winter">Winter</button><button class="chip" data-cat="Casual">Casual</button><button class="chip" data-cat="New">New</button><button class="chip" data-cat="Sale">Sale</button>
+      </div>
+      <div class="tools">
+        <input id="search" type="search" placeholder="Search suits..." aria-label="Search suits">
+        <select id="sort" aria-label="Sort"><option value="def">Sort: Featured</option><option value="lo">Price: low to high</option><option value="hi">Price: high to low</option><option value="rt">Best rated</option></select>
+      </div>
+    </div>
+    <p class="count" id="count"></p>
+    <div class="grid" id="products"></div>
+  </div></section>
+</div>
+
+<!-- ABOUT -->
+<div class="page" id="pg-about" hidden>
+  <section class="titlebar"><div class="wrap"><h1 style="font-size:clamp(2.4rem,6vw,4rem)">About us</h1><p>Tradition, tailored for today</p></div></section>
+  <section class="sec"><div class="wrap two">
+    <div class="arch" data-label="SAHAR"><img data-n="about" src="images/about.jpg" alt="Our atelier" onerror="imgFb(this)"></div>
+    <div>
+      <h2>Born from the first light of morning</h2>
+      <p>Sahar means dawn. We started with a simple idea: every woman in Pakistan deserves a suit that feels special on an ordinary day and unforgettable on a big one.</p>
+      <p>Our artisans give every piece the same care, from choosing the fabric and placing the embroidery to the final stitch. Each suit goes through two quality checks before it is packed for you.</p>
+      <div class="nums"><div><b>5,000+</b>Orders delivered</div><div><b>4.8</b>Average rating</div><div><b>50+</b>Cities served</div></div>
+    </div>
+  </div></section>
+  <section class="sec alt"><div class="wrap feats">
+    <div class="feat"><h3>Premium fabric</h3><p>Lawn, chiffon, organza, velvet and khaddar, chosen by hand.</p></div>
+    <div class="feat"><h3>Fine stitching</h3><p>Skilled tailors and a double quality check on every suit.</p></div>
+    <div class="feat"><h3>Fair prices</h3><p>A luxury look without a luxury-brand bill.</p></div>
+    <div class="feat"><h3>Real support</h3><p>Talk to a real person on WhatsApp, any day.</p></div>
+  </div></section>
+</div>
+
+<!-- CONTACT -->
+<div class="page" id="pg-contact" hidden>
+  <section class="titlebar"><div class="wrap"><h1 style="font-size:clamp(2.4rem,6vw,4rem)">Contact us</h1><p>Questions about size, colour or delivery? We reply fast.</p></div></section>
+  <section class="sec"><div class="wrap two" style="align-items:start">
+    <div>
+      <h2>We are happy to help</h2>
+      <p>Send us a message and it reaches our team directly on WhatsApp. Open every day, 10 am to 10 pm.</p>
+      <div style="margin-top:26px">
+        <details open><summary>How long does delivery take?</summary><p>3 to 5 working days in all major cities. Delivery is free above Rs. 10,000, otherwise Rs. 250.</p></details>
+        <details><summary>Can I exchange my suit?</summary><p>Yes. Exchange within 7 days of delivery if the suit is unused and in its original packing.</p></details>
+        <details><summary>How can I pay?</summary><p>Cash on Delivery, Easypaisa or JazzCash. Choose your option at checkout.</p></details>
+      </div>
+    </div>
+    <form class="formcard" id="contactForm" novalidate>
+      <h3 style="margin-bottom:16px">Send a message</h3>
+      <div class="field"><label for="cn">Your name</label><input id="cn" name="name" autocomplete="name"><span class="err" data-e="name"></span></div>
+      <div class="field"><label for="cp">Mobile number</label><input id="cp" name="phone" type="tel" inputmode="tel" placeholder="03001234567" autocomplete="tel"><span class="err" data-e="phone"></span></div>
+      <div class="field"><label for="cm2">Message</label><textarea id="cm2" name="msg" rows="4"></textarea><span class="err" data-e="msg"></span></div>
+      <button class="btn full" type="submit">Send on WhatsApp</button>
+    </form>
+  </div></section>
+</div>
+
+<!-- CHECKOUT -->
+<div class="page" id="pg-checkout" hidden>
+  <section class="titlebar"><div class="wrap"><h1 style="font-size:clamp(2.4rem,6vw,4rem)">Checkout</h1><p>Enter your details and place your order</p></div></section>
+  <section class="sec" style="padding-top:40px"><div class="wrap co" id="coWrap"></div></section>
+</div>
+<!-- WISHLIST -->
+<div class="page" id="pg-wishlist" hidden>
+  <section class="titlebar"><div class="wrap"><h1 style="font-size:clamp(2.4rem,6vw,4rem)">Your wishlist</h1><p>Suits you saved for later</p></div></section>
+  <section class="sec" style="padding-top:40px"><div class="wrap"><div class="grid" id="wishGrid"></div></div></section>
+</div>
+
+<!-- TRACK ORDER -->
+<div class="page" id="pg-track" hidden>
+  <section class="titlebar"><div class="wrap"><h1 style="font-size:clamp(2.4rem,6vw,4rem)">Track your order</h1><p>Enter your order number and mobile number</p></div></section>
+  <section class="sec"><div class="wrap"><div class="formcard" style="max-width:640px;margin:0 auto">
+    <form id="trackForm" novalidate>
+      <div class="field"><label for="oid">Order number</label><input id="oid" name="oid" placeholder="SH-123456"><span class="err" data-e="oid"></span></div>
+      <div class="field"><label for="tph">Mobile number</label><input id="tph" name="tph" type="tel" inputmode="tel" placeholder="03001234567"><span class="err" data-e="tph"></span></div>
+      <button class="btn full" type="submit">Track order</button>
+    </form>
+    <div class="trackres" id="trackRes" hidden></div>
+  </div></div></section>
+</div>
+
+<!-- SIZE GUIDE -->
+<div class="page" id="pg-size" hidden>
+  <section class="titlebar"><div class="wrap"><h1 style="font-size:clamp(2.4rem,6vw,4rem)">Size guide</h1><p>Find your perfect fit</p></div></section>
+  <section class="sec"><div class="wrap prose">
+    <h2>Size chart (in inches)</h2>
+    <div class="tblw"><table class="tbl"><tr><th>Size</th><th>Chest</th><th>Waist</th><th>Hip</th><th>Shirt length</th></tr>
+    <tr><td>S</td><td>36</td><td>30</td><td>38</td><td>38</td></tr><tr><td>M</td><td>38</td><td>32</td><td>40</td><td>38</td></tr>
+    <tr><td>L</td><td>40</td><td>34</td><td>42</td><td>39</td></tr><tr><td>XL</td><td>42</td><td>36</td><td>44</td><td>39</td></tr></table></div>
+    <h2>How to measure</h2>
+    <ul><li><b>Chest:</b> measure around the fullest part of your chest, keeping the tape level.</li><li><b>Waist:</b> measure around your natural waistline.</li><li><b>Hip:</b> measure around the fullest part of your hips.</li><li>Between two sizes? Choose the larger one for a relaxed fit.</li></ul>
+    <p>Not sure? Send us your measurements on WhatsApp and we will suggest the right size.</p>
+    <a class="btn gold" id="sizeWa" target="_blank" rel="noopener">Ask about my size</a>
+  </div></section>
+</div>
+
+<!-- SHIPPING -->
+<div class="page" id="pg-shipping" hidden>
+  <section class="titlebar"><div class="wrap"><h1 style="font-size:clamp(2.4rem,6vw,4rem)">Shipping and returns</h1><p>Clear, simple policies</p></div></section>
+  <section class="sec"><div class="wrap prose">
+    <h2>Delivery</h2><p>We deliver all over Pakistan in 3 to 5 working days. You will receive your tracking updates on WhatsApp once your parcel is dispatched.</p>
+    <h2>Delivery charges</h2><p>Delivery is free on orders over Rs. 10,000. For smaller orders a flat charge of Rs. 250 applies.</p>
+    <h2>Payment</h2><p>Pay by Cash on Delivery, Easypaisa or JazzCash. For wallet payments, send the screenshot on WhatsApp so we can confirm your order.</p>
+    <h2>Exchange policy</h2><ul><li>Exchange within 7 days of delivery.</li><li>The suit must be unused, unwashed and in its original packing.</li><li>If we sent a wrong or damaged item, we replace it at no cost.</li></ul>
+    <h2>How to request an exchange</h2><p>Message us on WhatsApp with your order number and photos. Our team will guide you through the next steps.</p>
+  </div></section>
+</div>
+
+<!-- FAQ -->
+<div class="page" id="pg-faq" hidden>
+  <section class="titlebar"><div class="wrap"><h1 style="font-size:clamp(2.4rem,6vw,4rem)">FAQs</h1><p>Quick answers to common questions</p></div></section>
+  <section class="sec"><div class="wrap prose">
+    <details open><summary>How do I place an order?</summary><p>Choose a colour and size on any suit, tap Add to cart, then go to checkout. Enter your delivery details and tap Place order. Your order reaches us on WhatsApp for confirmation.</p></details>
+    <details><summary>How long does delivery take?</summary><p>3 to 5 working days in all major cities. Remote areas can take a day or two longer.</p></details>
+    <details><summary>Is Cash on Delivery available?</summary><p>Yes, Cash on Delivery is available all over Pakistan.</p></details>
+    <details><summary>How do I pay with Easypaisa or JazzCash?</summary><p>Select the option at checkout, send the amount to the account shown, then share the payment screenshot with us on WhatsApp.</p></details>
+    <details><summary>Can I exchange or return a suit?</summary><p>You can exchange within 7 days of delivery if the suit is unused and in its original packing.</p></details>
+    <details><summary>How do I choose my size?</summary><p>Check our size guide page. If you are unsure, send your measurements on WhatsApp and we will help.</p></details>
+    <details><summary>Will the colour match the photos?</summary><p>We photograph every suit in natural light. Slight differences can occur depending on your screen.</p></details>
+    <details><summary>Can I change or cancel my order?</summary><p>Message us on WhatsApp as soon as possible, before your parcel is dispatched.</p></details>
+  </div></section>
+</div>
+
+<!-- PRIVACY -->
+<div class="page" id="pg-privacy" hidden>
+  <section class="titlebar"><div class="wrap"><h1 style="font-size:clamp(2.4rem,6vw,4rem)">Privacy policy</h1><p>How we handle your information</p></div></section>
+  <section class="sec"><div class="wrap prose">
+    <h2>What we collect</h2><p>When you place an order we collect your name, mobile number, city and delivery address, and optionally your email. We use this only to process and deliver your order and to contact you about it.</p>
+    <h2>How we use it</h2><p>Your details are sent to our team on WhatsApp so we can confirm and dispatch your order. We never sell your personal information.</p>
+    <h2>Storage on your device</h2><p>Your cart, wishlist and recent orders are saved in your own browser so they are still there when you return. You can clear them any time from your browser settings.</p>
+    <h2>Contact</h2><p>For any privacy question, message us on WhatsApp.</p>
+  </div></section>
+</div>
+
+<!-- TERMS -->
+<div class="page" id="pg-terms" hidden>
+  <section class="titlebar"><div class="wrap"><h1 style="font-size:clamp(2.4rem,6vw,4rem)">Terms of service</h1><p>Please read before ordering</p></div></section>
+  <section class="sec"><div class="wrap prose">
+    <h2>Orders</h2><p>An order is confirmed once our team confirms it on WhatsApp. We may contact you to verify your address or payment.</p>
+    <h2>Prices and availability</h2><p>Prices are in Pakistani Rupees and can change without notice. Stock shown on the site is updated regularly, but an item may occasionally sell out before your order is confirmed.</p>
+    <h2>Payment</h2><p>We accept Cash on Delivery, Easypaisa and JazzCash.</p>
+    <h2>Exchange</h2><p>Exchanges follow our Shipping and returns policy.</p>
+    <h2>Colours and images</h2><p>Colours may look slightly different on different screens.</p>
+  </div></section>
+</div>
+</main>
+
+<footer><div class="wrap">
+  <div class="fg">
+    <div><div class="logo">SAHAR<small>ATELIER</small></div><p>Pakistani luxury lawn, formal and winter wear, made with care and delivered to your door.</p>
+      <form class="news" id="newsForm" novalidate><input type="email" id="newsEm" placeholder="Email for new arrivals and offers" aria-label="Email"><button type="submit">Join</button></form></div>
+    <div><h4>Shop</h4><a href="#collection" data-cat="New">New arrivals</a><a href="#collection" data-cat="Lawn">Lawn</a><a href="#collection" data-cat="Formal">Formal</a><a href="#collection" data-cat="Winter">Winter</a><a href="#collection" data-cat="Casual">Casual</a><a href="#collection" data-cat="Sale">Sale</a></div>
+    <div><h4>Help</h4><a href="#track">Track your order</a><a href="#size">Size guide</a><a href="#shipping">Shipping and returns</a><a href="#faq">FAQs</a><a href="#wishlist">Wishlist</a></div>
+    <div><h4>Company</h4><a href="#about">About us</a><a href="#contact">Contact us</a><a href="#privacy">Privacy policy</a><a href="#terms">Terms of service</a></div>
+  </div>
+  <div class="paybadges"><span>Cash on Delivery</span><span>Easypaisa</span><span>JazzCash</span><span>7-day exchange</span></div>
+  <p class="copy">© <span id="yr"></span> SAHAR Atelier. All rights reserved.</p>
+</div></footer>
+
+<div class="ov" id="ov"></div>
+<aside class="side" id="side" aria-label="Menu">
+  <div class="sh"><div class="logo">SAHAR<small>ATELIER</small></div><button id="sideX" aria-label="Close menu">×</button></div>
+  <div class="sb">
+    <h5>Shop</h5><a href="#home" data-p="home">Home</a><a href="#collection" data-cat="All">All suits</a><a href="#collection" data-cat="New">New arrivals</a><a href="#collection" data-cat="Sale">Sale</a>
+    <h5>Categories</h5><a href="#collection" data-cat="Lawn">Lawn</a><a href="#collection" data-cat="Formal">Formal</a><a href="#collection" data-cat="Winter">Winter</a><a href="#collection" data-cat="Casual">Casual</a>
+    <h5>Help</h5><a href="#wishlist">My wishlist</a><a href="#track">Track your order</a><a href="#size">Size guide</a><a href="#shipping">Shipping and returns</a><a href="#faq">FAQs</a><a href="#contact">Contact us</a>
+    <h5>Company</h5><a href="#about">About us</a><a href="#privacy">Privacy policy</a><a href="#terms">Terms of service</a>
+  </div>
+  <div class="sf"><a class="btn gold full" id="sideWa" target="_blank" rel="noopener">Chat on WhatsApp</a>Cash on Delivery, Easypaisa and JazzCash. Free delivery over Rs. 10,000.</div>
+</aside>
+<div class="modal" id="qv" hidden><div class="mbox"><button class="mx" id="qvX" aria-label="Close">×</button><div id="qvBody"></div></div></div>
+
+<aside class="drawer" id="drawer" aria-label="Cart">
+  <div class="dh"><h3>Your cart</h3><button id="cartX" aria-label="Close cart">×</button></div>
+  <div class="ship" id="shipMsg"></div>
+  <div class="db" id="cartBody"></div>
+  <div class="df"><div class="line"><span>Subtotal</span><b id="cartSub"></b></div><div class="line"><span>Delivery</span><b id="cartShip"></b></div>
+  <a class="btn full" id="cartGo" href="#checkout" style="margin-top:12px">Go to checkout</a></div>
+</aside>
+<div class="toast" id="toast" role="status"></div>
+<a class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.400 8.600 3.400 15.500c0 2.400.7 4.600 1.900 6.500L3 29l7.200-2.200a12.500 12.500 0 0 0 5.800 1.400c7 0 12.600-5.600 12.600-12.600S23 3 16 3zm0 22.800c-1.900 0-3.700-.5-5.200-1.500l-.4-.2-4.300 1.300 1.400-4.100-.3-.4a10 10 0 0 1-1.600-5.400C5.600 9.900 10.300 5.300 16 5.300s10.400 4.600 10.400 10.300S21.700 25.800 16 25.800zm5.700-7.600c-.3-.2-1.800-.9-2.100-1s-.5-.2-.7.200-.8 1-.9 1.200-.3.200-.6.100a8.400 8.400 0 0 1-4.200-3.700c-.3-.6.3-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400s-1 1-1 2.500 1.100 2.900 1.200 3.100 2.100 3.300 5.200 4.600c1.900.8 2.700.9 3.600.7.600-.1 1.800-.8 2.100-1.500s.3-1.300.2-1.500-.3-.2-.6-.4z"/></svg><span>WhatsApp</span></a>
+<button class="chat-fab" id="chatFab">Ask our assistant</button>
+<section class="chat" id="chat" hidden aria-label="Chat assistant">
+  <div class="ch"><div><b>SAHAR Assistant</b><small>English and Roman Urdu</small></div><button id="chatX" aria-label="Close chat">×</button></div>
+  <div class="cm" id="cm"></div>
+  <div class="qr" id="qr"><button>Delivery time</button><button>Payment options</button><button>Size help</button><button>Exchange policy</button><button>Order kaise karein</button><button>Track my order</button></div>
+  <div class="cf"><input id="ci" placeholder="Ask in English or Roman Urdu..." autocomplete="off"><button id="cs">Send</button></div>
+</section>
+
+<script>
+/* ============ SETTINGS: change these for each client ============ */
+var CFG={brand:"SAHAR",cur:"Rs.",wa:"923716649231",fee:250,freeAbove:10000,
+ pay:{easypaisa:{t:"Easypaisa",num:"03XX-XXXXXXX",name:"Account Title"},jazzcash:{t:"JazzCash",num:"03XX-XXXXXXX",name:"Account Title"}}};
+
+/* ============ PRODUCTS ============ */
+var P=[
+{id:1,name:"Noor Embroidered Lawn",fab:"Premium lawn, 3 piece",cat:"Lawn",price:6490,old:7990,rating:4.8,rev:126,img:"p1",colors:[["Mint","#a9d3bd"],["Ivory","#efe6d2"],["Blush","#e9b9b5"]],stock:{S:5,M:8,L:3,XL:2}},
+{id:2,name:"Gulbahar Chiffon Formal",fab:"Handwork chiffon, 3 piece",cat:"Formal",price:14900,old:17500,rating:4.9,rev:84,img:"p2",colors:[["Emerald","#1d5a45"],["Plum","#5d2a45"],["Teal","#1e5a64"]],stock:{S:2,M:3,L:4,XL:0}},
+{id:3,name:"Mehr Velvet Shawl Suit",fab:"Velvet with wool shawl, 3 piece",cat:"Winter",price:12500,old:0,rating:4.7,rev:61,img:"p3",colors:[["Wine","#6e2233"],["Navy","#1c2b4d"],["Bottle Green","#16402f"]],stock:{S:0,M:4,L:5,XL:3}},
+{id:4,name:"Zarmeen Khaddar",fab:"Soft khaddar, 2 piece",cat:"Winter",price:4990,old:5900,rating:4.6,rev:203,img:"p4",colors:[["Mustard","#c9972b"],["Grey","#8a8d90"],["Rust","#a4502d"]],stock:{S:9,M:12,L:10,XL:6}},
+{id:5,name:"Anaya Organza Pret",fab:"Embroidered organza, 3 piece",cat:"Formal",price:9800,old:11200,rating:4.8,rev:47,img:"p5",colors:[["Pearl","#efe9df"],["Sage","#a9b89c"],["Rose","#d89aa4"]],stock:{S:1,M:2,L:1,XL:0}},
+{id:6,name:"Rubab Printed Cotton",fab:"Pure cotton, 2 piece",cat:"Casual",price:3490,old:3990,rating:4.5,rev:312,img:"p6",colors:[["Sky","#9fc3dd"],["Peach","#f1c3a5"],["Lilac","#c2b0dc"]],stock:{S:14,M:18,L:12,XL:9}},
+{id:7,name:"Meerab Wedding Net",fab:"Net with zari work, 3 piece",cat:"Formal",price:24900,old:29900,rating:5.0,rev:29,img:"p7",colors:[["Ruby","#8a1c2e"],["Gold","#b8913f"]],stock:{S:1,M:1,L:2,XL:1}},
+{id:8,name:"Saba Linen Co-ord",fab:"Linen, 2 piece",cat:"Casual",price:5750,old:0,rating:4.6,rev:95,img:"p8",colors:[["Sand","#d9c7a5"],["Olive","#7b7d4a"],["White","#f5f3ee"]],stock:{S:6,M:7,L:5,XL:4}}
+];
+var CATS=[["Lawn","Summer breeze","p1"],["Formal","Weddings and events","p2"],["Winter","Velvet and khaddar","p3"],["Casual","Everyday ease","p6"]];
+
+/* ============ HELPERS ============ */
+var $=function(s,r){return(r||document).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var money=function(n){return CFG.cur+" "+Number(n).toLocaleString("en-PK")};
+var stars=function(r){return '<span class="stars" style="--r:'+(r/5*100)+'%">★★★★★</span>'};
+var byId=function(i){return P.filter(function(p){return p.id==i})[0]};
+var waLink=function(t){return "https://wa.me/"+CFG.wa+"?text="+encodeURIComponent(t)};
+var sum=function(o){var t=0;for(var k in o)t+=o[k];return t};
+
+function img(n,alt){return '<img src="images/'+n+'.jpg" data-n="'+n+'" alt="'+(alt||"")+'" loading="lazy" onerror="imgFb(this)">'}
+function toast(m){var t=$("#toast");t.textContent=m;t.classList.add("show");clearTimeout(toast.t);toast.t=setTimeout(function(){t.classList.remove("show")},2300)}
+function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
+
+[1,2,5,7,8].forEach(function(i){byId(i).isNew=1});
+var wish=[];try{wish=JSON.parse(ls("sahar_wish"))||[]}catch(e){wish=[]}
+/* ============ CART ============ */
+var cart=[];try{cart=JSON.parse(ls("sahar_cart"))||[]}catch(e){cart=[]}
+cart=cart.filter(function(i){return byId(i.id)});
+function saveCart(){ls("sahar_cart",JSON.stringify(cart));drawCart()}
+function subtotal(){return cart.reduce(function(a,i){return a+byId(i.id).price*i.qty},0)}
+function shipping(){var s=subtotal();return s===0||s>=CFG.freeAbove?0:CFG.fee}
+function addToCart(id,color,size){
+  var f=cart.filter(function(i){return i.id===id&&i.color===color&&i.size===size})[0],left=byId(id).stock[size];
+  if(f){if(f.qty>=left)return toast("No more stock in this size");f.qty++}else cart.push({id:id,color:color,size:size,qty:1});
+  saveCart();toast("Added to cart")}
+function drawCart(){
+  $("#cartCount").textContent=cart.reduce(function(a,i){return a+i.qty},0);
+  $("#cartBody").innerHTML=cart.length?cart.map(function(i,k){var p=byId(i.id);
+    return '<div class="ci"><div class="ph" data-label="">'+img(p.img)+'</div><div><h4>'+p.name+'</h4><small>'+i.color+', size '+i.size+'</small><div class="qty"><button data-q="-1" data-k="'+k+'" aria-label="Decrease">−</button><span>'+i.qty+'</span><button data-q="1" data-k="'+k+'" aria-label="Increase">+</button></div></div><div style="text-align:right"><b>'+money(p.price*i.qty)+'</b><br><button class="rm" data-rm="'+k+'">Remove</button></div></div>'}).join(""):'<p class="empty">Your cart is empty. Pick a suit from the collection.</p>';
+  var s=subtotal(),left=CFG.freeAbove-s;
+  $("#shipMsg").innerHTML=s===0?"Free delivery on orders over "+money(CFG.freeAbove):(left>0?"Add <b>"+money(left)+"</b> more for free delivery":"You unlocked <b>free delivery</b>")+'<div class="bar2"><i style="width:'+Math.min(100,s/CFG.freeAbove*100)+'%"></i></div>';
+  $("#cartSub").textContent=money(s);$("#cartShip").textContent=shipping()?money(shipping()):"Free";
+  $("#cartGo").style.opacity=cart.length?1:.4;$("#cartGo").style.pointerEvents=cart.length?"auto":"none"}
+function openCart(v){$("#drawer").classList.toggle("show",v);$("#ov").classList.toggle("show",v)}
+
+/* ============ PRODUCT CARDS ============ */
+function stockText(p,size){var n=size?p.stock[size]:sum(p.stock);if(n===0)return["out",size?"Out of stock in this size":"Sold out"];if(n<=3)return["low","Only "+n+" left"];return["ok","In stock"]}
+function cardHTML(p){var s=stockText(p),out=s[0]==="out";
+  return '<article class="card" data-id="'+p.id+'"><div class="ph" data-label="'+p.name.split(" ")[0]+'">'+img(p.img,p.name)+'<button class="heart'+(wished(p.id)?" on":"")+'" aria-label="Save to wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.4-9.3C1.3 8.4 3.2 5 6.6 5c2 0 3.6 1.1 5.4 3.200C13.800 6.100 15.400 5 17.400 5c3.400 0 5.300 3.400 4 6.700C19.500 16.400 12 21 12 21z"/></svg></button><span class="qvhint">Quick view</span>'+(p.old?'<span class="tag">'+Math.round((1-p.price/p.old)*100)+'% off</span>':"")+'</div>'+
+  '<div class="cb"><h3>'+p.name+'</h3><p class="fab">'+p.fab+'</p><div class="rate">'+stars(p.rating)+'<small>'+p.rating+' ('+p.rev+' reviews)</small></div>'+
+  '<div class="pr"><b>'+money(p.price)+'</b>'+(p.old?'<s>'+money(p.old)+'</s>':"")+'</div>'+
+  '<div><span class="lbl">Colour: <em class="cn">'+p.colors[0][0]+'</em></span><div class="sw">'+p.colors.map(function(c,i){return '<button class="'+(i?"":"on")+'" data-c="'+c[0]+'" title="'+c[0]+'" aria-label="'+c[0]+'" style="background:'+c[1]+'"></button>'}).join("")+'</div></div>'+
+  '<div><span class="lbl">Size</span><div class="sz">'+Object.keys(p.stock).map(function(k){return '<button data-s="'+k+'"'+(p.stock[k]?"":" disabled")+'>'+k+'</button>'}).join("")+'</div></div>'+
+  '<div class="st '+s[0]+'">'+s[1]+'</div>'+
+  '<div class="acts"><button class="btn add"'+(out?" disabled":"")+'>Add to cart</button><button class="btn ghost one"'+(out?" disabled":"")+'>Order on WhatsApp</button></div></div></article>'}
+document.addEventListener("click",function(e){
+  var card=e.target.closest(".card");if(!card)return;var p=byId(card.getAttribute("data-id"));
+  if(e.target.closest(".heart")){toggleWish(p.id);return}
+  if(e.target.closest(".ph")&&!e.target.closest("#qvBody")){openQV(p.id);return}
+  var sw=e.target.closest(".sw button"),sz=e.target.closest(".sz button");
+  if(sw){$$(".sw button",card).forEach(function(b){b.classList.remove("on")});sw.classList.add("on");$(".cn",card).textContent=sw.getAttribute("data-c")}
+  if(sz&&!sz.disabled){$$(".sz button",card).forEach(function(b){b.classList.remove("on")});sz.classList.add("on");var s=stockText(p,sz.getAttribute("data-s")),st=$(".st",card);st.className="st "+s[0];st.textContent=s[1]}
+  var col=function(){return $(".sw .on",card).getAttribute("data-c")},siz=function(){var b=$(".sz .on",card);return b&&b.getAttribute("data-s")};
+  if(e.target.closest(".add")){if(!siz())return toast("Please select a size first");addToCart(p.id,col(),siz())}
+  if(e.target.closest(".one")){if(!siz())return toast("Please select a size first");window.open(waLink("Hello! I would like to order:\n"+p.name+"\nColour: "+col()+"\nSize: "+siz()+"\nPrice: "+money(p.price)),"_blank")}
+});
+
+/* ============ ROUTER ============ */
+var PAGES=["home","collection","about","contact","checkout","faq","shipping","size","track","privacy","terms","wishlist"],state={cat:"All",sort:"def",q:""};
+var TITLES={home:"SAHAR Atelier | Pakistani Luxury Lawn, Formal and Winter Wear",collection:"Collection",about:"About us",contact:"Contact us",checkout:"Checkout",faq:"FAQs",shipping:"Shipping and returns",size:"Size guide",track:"Track your order",privacy:"Privacy policy",terms:"Terms of service",wishlist:"Wishlist"};
+function catOk(p){var c=state.cat;return c==="All"||(c==="New"?!!p.isNew:c==="Sale"?!!p.old:p.cat===c)}
+function catLabel(){var c=state.cat;return c==="All"?"":c==="New"?" in New arrivals":c==="Sale"?" on sale":" in "+c}
+var cur=(location.hash||"#home").slice(1);
+function go(h){cur=h;try{if(location.hash!=="#"+h)history.pushState({},"","#"+h)}catch(e){}route()}
+function route(){
+  var h=cur;if(PAGES.indexOf(h)<0)h="home";
+  PAGES.forEach(function(p){$("#pg-"+p).hidden=p!==h});
+  $$(".tabs a").forEach(function(a){var pp=a.getAttribute("data-p");a.classList.toggle("on",pp?pp===h:(h==="collection"&&a.getAttribute("data-cat")===state.cat))});
+  openCart(false);openSide(false);closeQV();window.scrollTo(0,0);
+  if(h==="collection")drawCollection();if(h==="checkout")drawCheckout();if(h==="wishlist")drawWish();
+  var t=$(".tabs a.on"),tb=$("#tabs");if(t)tb.scrollLeft=t.offsetLeft-(tb.clientWidth-t.clientWidth)/2;
+  document.title=TITLES[h]+(h==="home"?"":" | SAHAR Atelier")}
+function fromHash(){cur=(location.hash||"#home").slice(1);route()}
+window.addEventListener("hashchange",fromHash);window.addEventListener("popstate",fromHash);
+document.addEventListener("click",function(e){
+  var a=e.target.closest('a[href^="#"]');if(!a)return;
+  var h=a.getAttribute("href").slice(1);if(PAGES.indexOf(h)<0)return;
+  e.preventDefault();
+  if(h==="collection"){state.cat=a.getAttribute("data-cat")||"All";state.q=(a.getAttribute("data-q")||"").toLowerCase()}
+  go(h)});
+
+function drawCollection(){
+  var l=P.filter(function(p){return catOk(p)&&(p.name+" "+p.fab+" "+p.cat).toLowerCase().indexOf(state.q)>-1});
+  if(state.sort==="lo")l.sort(function(a,b){return a.price-b.price});if(state.sort==="hi")l.sort(function(a,b){return b.price-a.price});if(state.sort==="rt")l.sort(function(a,b){return b.rating-a.rating});
+  $("#products").innerHTML=l.length?l.map(cardHTML).join(""):'<p class="empty">No suits found. Try a different search or category.</p>';
+  $("#count").textContent=l.length+" suit"+(l.length===1?"":"s")+catLabel();
+  $$(".chip").forEach(function(c){c.classList.toggle("on",c.getAttribute("data-cat")===state.cat)});
+  $("#sort").value=state.sort;$("#search").value=state.q}
+
+/* ============ CHECKOUT ============ */
+function showDone(id,url){
+  $("#coWrap").innerHTML='<div class="okbox"><h2>Thank you! Your order is placed</h2><p>Your order number is <b>'+id+'</b>. Tap the button below to send your order details on WhatsApp so we can confirm it right away.</p><a class="btn gold" href="'+url+'" target="_blank" rel="noopener">Send order on WhatsApp</a> &nbsp; <a class="btn ghost" href="#track">Track order</a> &nbsp; <a class="btn ghost" href="#collection">Continue shopping</a></div>'}
+function drawCheckout(){
+  var w=$("#coWrap");
+  if(!cart.length){var L=null;try{L=JSON.parse(ls("sahar_last"))}catch(e){}if(L&&Date.now()-L.ts<18e5){showDone(L.id,L.url);return}w.innerHTML='<div class="okbox"><h2>Your cart is empty</h2><p>Choose a suit from the collection first.</p><a class="btn" href="#collection">Browse collection</a></div>';return}
+  w.innerHTML='<form class="formcard" id="coForm" novalidate><h3 style="margin-bottom:16px">Delivery details</h3>'+
+  '<div class="row2"><div class="field"><label for="f1">Full name *</label><input id="f1" name="name" autocomplete="name"><span class="err" data-e="name"></span></div>'+
+  '<div class="field"><label for="f2">Mobile number *</label><input id="f2" name="phone" type="tel" inputmode="tel" placeholder="03001234567" autocomplete="tel"><span class="err" data-e="phone"></span></div></div>'+
+  '<div class="row2"><div class="field"><label for="f3">Email (optional)</label><input id="f3" name="email" type="email" autocomplete="email"><span class="err" data-e="email"></span></div>'+
+  '<div class="field"><label for="f4">City *</label><input id="f4" name="city" list="cities" autocomplete="address-level2"><datalist id="cities"><option>Karachi<option>Lahore<option>Islamabad<option>Rawalpindi<option>Faisalabad<option>Multan<option>Peshawar<option>Quetta<option>Sialkot<option>Gujranwala<option>Hyderabad</datalist><span class="err" data-e="city"></span></div></div>'+
+  '<div class="field"><label for="f5">Complete address *</label><textarea id="f5" name="address" rows="3" placeholder="House no., street, area, landmark"></textarea><span class="err" data-e="address"></span></div>'+
+  '<div class="field"><label for="f6">Order note (optional)</label><input id="f6" name="note"></div>'+
+  '<h3 style="margin:8px 0 12px">Payment method</h3><div class="pay"><label><input type="radio" name="pay" value="cod" checked> Cash on Delivery</label><label><input type="radio" name="pay" value="easypaisa"> Easypaisa</label><label><input type="radio" name="pay" value="jazzcash"> JazzCash</label></div>'+
+  '<div class="paybox" id="payBox"></div><button class="btn full" type="submit">Place order</button></form>'+
+  '<aside class="sum"><h3>Order summary</h3>'+cart.map(function(i){var p=byId(i.id);return '<div class="line"><span>'+p.name+'<small>'+i.color+', size '+i.size+', qty '+i.qty+'</small></span><b>'+money(p.price*i.qty)+'</b></div>'}).join("")+
+  '<div class="line"><span>Subtotal</span><b>'+money(subtotal())+'</b></div><div class="line"><span>Delivery</span><b>'+(shipping()?money(shipping()):"Free")+'</b></div><div class="line tot"><span>Total</span><span>'+money(subtotal()+shipping())+'</span></div></aside>';
+  var f=$("#coForm");
+  function payUpd(){var m=f.elements.pay.value;$$(".pay label").forEach(function(l){l.classList.toggle("on",l.querySelector("input").checked)});var b=$("#payBox");
+    if(m==="cod")b.textContent="Pay the rider in cash when your suit arrives.";else{var a=CFG.pay[m];b.innerHTML="Send payment to <b>"+a.t+"</b><br>Number: <b>"+a.num+"</b><br>Account title: <b>"+a.name+"</b><br>After paying, send the screenshot on WhatsApp."}}
+  f.addEventListener("change",payUpd);payUpd();
+  f.addEventListener("submit",function(e){e.preventDefault();
+    var v=function(n){return f.elements[n].value.trim()},er={},ph=v("phone").replace(/[\s-]/g,"");
+    if(!/^[A-Za-z\u0600-\u06FF .'-]{3,}$/.test(v("name")))er.name="Please enter your full name.";
+    if(!/^(03\d{9}|\+?923\d{9})$/.test(ph))er.phone="Enter a valid mobile number, e.g. 03001234567.";
+    if(v("email")&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v("email")))er.email="This email address looks incorrect.";
+    if(v("city").length<3)er.city="Please enter your city.";
+    if(v("address").length<15||!/\d|house|street|gali|road|block|sector|mohalla|phase|colony|town/i.test(v("address")))er.address="Please enter your complete address: house number, street and area.";
+    $$(".err",f).forEach(function(s){s.textContent=""});$$(".bad",f).forEach(function(x){x.classList.remove("bad")});
+    var keys=Object.keys(er);keys.forEach(function(k){f.elements[k].classList.add("bad");$('[data-e="'+k+'"]',f).textContent=er[k]});
+    if(keys.length){f.elements[keys[0]].focus();return toast("Please fix the highlighted fields")}
+    var id="SH-"+String(Date.now()).slice(-6),pn={cod:"Cash on Delivery",easypaisa:"Easypaisa",jazzcash:"JazzCash"}[v("pay")==="" ? "cod":f.elements.pay.value];
+    var items=cart.map(function(i,n){var p=byId(i.id);return(n+1)+". "+p.name+" | "+i.color+" | Size "+i.size+" | x"+i.qty+" | "+money(p.price*i.qty)}).join("\n");
+    var msg="*NEW ORDER "+id+"* - "+CFG.brand+"\n\n*Customer*\nName: "+v("name")+"\nPhone: "+ph+"\n"+(v("email")?"Email: "+v("email")+"\n":"")+"City: "+v("city")+"\nAddress: "+v("address")+"\n"+(v("note")?"Note: "+v("note")+"\n":"")+"\n*Items*\n"+items+"\n\nSubtotal: "+money(subtotal())+"\nDelivery: "+(shipping()?money(shipping()):"Free")+"\n*Total: "+money(subtotal()+shipping())+"*\nPayment: "+pn;
+    saveOrder({id:id,phone:normPhone(ph),ts:Date.now(),total:subtotal()+shipping(),n:cart.length,city:v("city")});var url=waLink(msg);cart=[];saveCart();
+    ls("sahar_last",JSON.stringify({id:id,url:url,ts:Date.now()}));showDone(id,url);window.scrollTo(0,0);try{window.open(url,"_blank")}catch(x){}})}
+
+/* ============ CONTACT ============ */
+$("#contactForm").addEventListener("submit",function(e){e.preventDefault();var f=e.target,v=function(n){return f.elements[n].value.trim()},er={};
+  if(v("name").length<3)er.name="Please enter your name.";
+  if(!/^(03\d{9}|\+?923\d{9})$/.test(v("phone").replace(/[\s-]/g,"")))er.phone="Enter a valid mobile number.";
+  if(v("msg").length<10)er.msg="Please write a few more words.";
+  $$(".err",f).forEach(function(s){s.textContent=""});$$(".bad",f).forEach(function(x){x.classList.remove("bad")});
+  var k=Object.keys(er);k.forEach(function(n){f.elements[n].classList.add("bad");$('[data-e="'+n+'"]',f).textContent=er[n]});
+  if(k.length)return toast("Please fix the highlighted fields");
+  window.open(waLink("Website message\nName: "+v("name")+"\nPhone: "+v("phone")+"\nMessage: "+v("msg")),"_blank");f.reset();toast("Thanks! Tap Send in WhatsApp")});
+
+/* ============ CHATBOT ============ */
+var UR=/\b(kya|kia|hai|hain|mein|mujhe|mujhy|chahiye|chahie|chahye|kitna|kitne|kab|kaise|kese|aap|ap|nahi|nahin|bhej|bhejo|paisay|paise|kahan|kaha|karna|karein|krna|kr|hoga|milega|sakta|sakti|batao|bataye|bataen|shukriya|acha|theek|thik|lena|dena|wapis|badal|qeemat|keemat|salam|assalam|ka|ki|ko|se|ho|hum|aur|jee|abhi|jaldi)\b/i;
+var STOP=["suit","suits","price","size","sizes","stock","order","piece","colour","color","delivery","please","about","kitne","hain","kaise","mujhe","chahiye"];
+function nm(n){return CFG.cur+" "+Number(n).toLocaleString("en-PK")}
+var BOT=[
+[/track|status|parcel|kahan hai|kidhar|order kahan|mera order/i,'You can follow your order on our <a href="#track">Track your order</a> page. Enter your order number and mobile number.','Aap apna order <a href="#track">Track your order</a> page par dekh sakte hain. Order number aur mobile number likhein.'],
+[/cancel|change my order|order change|band kar/i,"To change or cancel an order, message us on WhatsApp before it is dispatched.","Order badalne ya cancel karne ke liye dispatch se pehle humein WhatsApp par message karein."],
+[/deliver|shipping|dispatch|how long|how many days|kitne din|kab tak|kab aay|kab milega|kab pohanch|pahunch|pohanch|courier|tcs|leopard|delivery charges|charges/i,"Delivery takes 3 to 5 working days all over Pakistan. It is free above "+nm(CFG.freeAbove)+", otherwise "+nm(CFG.fee)+".","Delivery poore Pakistan mein 3 se 5 din mein hoti hai. "+nm(CFG.freeAbove)+" se upar free hai, warna "+nm(CFG.fee)+" charges hain."],
+[/cod|cash on|easypaisa|easy paisa|jazz|pay|paisa|paise|paisay|raqam|account|wallet|advance|payment/i,"You can pay by Cash on Delivery, Easypaisa or JazzCash. Choose the option at checkout. For Easypaisa or JazzCash, send the payment screenshot on WhatsApp.","Aap Cash on Delivery, Easypaisa ya JazzCash se payment kar sakte hain. Checkout par apna tareeqa chunein. Easypaisa ya JazzCash ke baad screenshot WhatsApp par bhej dein."],
+[/return|exchange|refund|wapis|wapas|badl|badal|tabdeel|kharab|damage|wrong/i,"We offer a 7-day exchange if the suit is unused and in its original packing. If you receive a wrong or damaged item, we replace it free. See the <a href=\"#shipping\">Shipping and returns</a> page.","Suit istemal na hui ho aur original packing mein ho to 7 din ke andar exchange ho jata hai. Ghalat ya kharab suit aaye to hum free badal dete hain. <a href=\"#shipping\">Shipping and returns</a> page dekhein."],
+[/size|chart|fit|measure|naap|nap\b|chota|chhota|bara|bada|medium|large|small|xl/i,'We have sizes S, M, L and XL. Pick a size under each suit; crossed-out sizes are sold out. See our <a href="#size">Size guide</a> for measurements.','Hamare paas S, M, L aur XL sizes hain. Har suit ke neeche size chunein, kata hua size khatam hai. Naap ke liye <a href="#size">Size guide</a> dekhein.'],
+[/discount|sale|offer|sasta|sasti|mehnga|mehngi|kam kar|price kam|promo|coupon/i,'Selected suits are up to 20% off right now. See them on our <a href="#collection" data-cat="Sale">Sale</a> page.','Kuch suits par abhi 20% tak discount hai. <a href="#collection" data-cat="Sale">Sale</a> page dekhein.'],
+[/price|cost|rate|qeemat|keemat|kitne ka|kitna|kitni|how much/i,"Prices start at "+nm(Math.min.apply(null,P.map(function(p){return p.price})))+" and go up to "+nm(Math.max.apply(null,P.map(function(p){return p.price})))+". Every suit shows its price, and many have a discount.","Qeemat "+nm(Math.min.apply(null,P.map(function(p){return p.price})))+" se shuru ho kar "+nm(Math.max.apply(null,P.map(function(p){return p.price})))+" tak hai. Har suit par price likhi hoti hai aur kai par discount bhi hai."],
+[/order|buy|purchase|kaise|kese|khareed|lena hai|book|how to/i,"Choose a colour and size, tap Add to cart, then Checkout. Fill in your address and tap Place order. Your order reaches us on WhatsApp for confirmation.","Color aur size chunein, Add to cart dabayein, phir Checkout par apna poora address likh kar Place order dabayein. Order confirmation ke liye hamare WhatsApp par aa jata hai."],
+[/fabric|material|lawn|cotton|chiffon|velvet|khaddar|organza|linen|quality|kapra|kapray|asli|original|genuine/i,"We stock premium lawn, chiffon, organza, velvet, khaddar, cotton and linen. The fabric is written on every suit.","Hamare paas premium lawn, chiffon, organza, velvet, khaddar, cotton aur linen hai. Har suit par fabric likha hota hai."],
+[/stock|available|availability|colour|color|rang|mojood|milega|mil jaye/i,"Colour, size and stock are shown on every suit. When 3 or fewer are left you will see an Only N left note.","Har suit par color, size aur stock nazar aata hai. 3 ya kam bachay hon to Only N left likha hota hai."],
+[/stitch|silai|unstitched|ready to wear|readymade|custom/i,"For stitching or custom size questions, please message us on WhatsApp and our team will guide you.","Silai ya custom size ke liye humein WhatsApp par message karein, hamari team rehnumai karegi."],
+[/contact|number|whatsapp|call|talk|human|agent|rabta|baat|address|location|kahan|shop|branch/i,'Chat with our team on <a href="'+waLink("Hello!")+'" target="_blank" rel="noopener">WhatsApp</a>. We reply every day, 10 am to 10 pm.','Hamari team se <a href="'+waLink("Hello!")+'" target="_blank" rel="noopener">WhatsApp</a> par baat karein. Hum rozana subah 10 se raat 10 baje tak jawab dete hain.'],
+[/salam|assalam|hello|hi\b|hey|hola/i,"Hello! Ask me about prices, sizes, delivery, payment or how to order. I understand English and Roman Urdu.","Walaikum Assalam! Aap price, size, delivery, payment ya order ke baare mein pooch sakte hain. English ya Roman Urdu, dono chalte hain."],
+[/thank|shukriya|jazak|thanks|shukria/i,"You are welcome! Let us know if you need anything else.","Aap ka shukriya! Koi aur madad chahiye to bataiye."]];
+function findItem(q,ur){
+  var toks=q.toLowerCase().split(/[^a-z]+/).filter(function(t){return t.length>=4&&STOP.indexOf(t)<0});if(!toks.length)return null;
+  var cats=["lawn","formal","winter","casual"];
+  var c=toks.filter(function(t){return cats.indexOf(t)>-1})[0];
+  var hit=P.filter(function(p){var s=(p.name+" "+p.fab).toLowerCase();return toks.some(function(t){return s.indexOf(t)>-1&&cats.indexOf(t)<0})})[0];
+  if(hit){var cols=hit.colors.map(function(x){return x[0]}).join(", "),sz=Object.keys(hit.stock).filter(function(k){return hit.stock[k]}).join(", ")||"none";
+    var l='<a href="#collection" data-q="'+hit.name+'">'+(ur?"Suit dekhein":"View this suit")+'</a>';
+    return ur?hit.name+" ki qeemat "+nm(hit.price)+(hit.old?" hai (pehle "+nm(hit.old)+")":" hai")+". Colors: "+cols+". Available sizes: "+sz+". "+l:hit.name+" is "+nm(hit.price)+(hit.old?" (was "+nm(hit.old)+")":"")+". Colours: "+cols+". Sizes in stock: "+sz+". "+l}
+  if(c){var C=c.charAt(0).toUpperCase()+c.slice(1),L=P.filter(function(p){return p.cat===C}).map(function(p){return p.name+" ("+nm(p.price)+")"}).join(", ");
+    return (ur?"Hamari "+C+" collection: ":"Our "+C+" collection: ")+L+'. <a href="#collection" data-cat="'+C+'">'+(ur?"Sab dekhein":"Browse all")+'</a>'}
+  return null}
+function initChat(){
+  var box=$("#cm");function add(t,w,h){var d=document.createElement("div");d.className="m "+w;if(h)d.innerHTML=t;else d.textContent=t;box.appendChild(d);box.scrollTop=box.scrollHeight;return d}
+  function ask(q){q=q.trim();if(!q)return;add(q,"me");var ur=UR.test(q)&&(q.match(UR)||[]).length>0&&!/[\u0600-\u06FF]/.test(q)?true:false;
+    var words=q.toLowerCase().split(/\s+/),urc=words.filter(function(w){return UR.test(w)}).length;ur=urc>=1&&urc>=Math.ceil(words.length/4);
+    var tp=add('<span class="typing"><i></i><i></i><i></i></span>',"bot",1);
+    setTimeout(function(){var r=findItem(q,ur);if(!r){var b=BOT.filter(function(x){return x[0].test(q)})[0];r=b?(ur?b[2]:b[1]):null}
+      tp.innerHTML=r||(ur?'Is sawal ka behtar jawab hamari team de sakti hai. <a href="'+waLink(q)+'" target="_blank" rel="noopener">WhatsApp par poochein</a>.':'I am not sure about that one. Our team can help on <a href="'+waLink(q)+'" target="_blank" rel="noopener">WhatsApp</a>.');box.scrollTop=box.scrollHeight},550)}
+  add("Hello! I am the SAHAR assistant. Ask me about prices, sizes, delivery, payment or how to order. English aur Roman Urdu, dono chalte hain.","bot");
+  $("#chat").hidden=true;
+  $("#chatFab").onclick=function(){$("#chat").hidden=false;$("#chatFab").hidden=true;$("#ci").focus()};
+  $("#chatX").onclick=function(){$("#chat").hidden=true;$("#chatFab").hidden=false};
+  $("#cs").onclick=function(){ask($("#ci").value);$("#ci").value=""};
+  $("#ci").onkeydown=function(e){if(e.key==="Enter")$("#cs").click()};
+  $("#qr").onclick=function(e){if(e.target.tagName==="BUTTON")ask(e.target.textContent)};
+  $("#cm").addEventListener("click",function(e){if(e.target.closest("a[data-cat],a[data-q]")){$("#chatX").click()}})}
+
+/* ============ INIT ============ */
+$("#yr").textContent=new Date().getFullYear();
+$("#waFloat").href=waLink("Hello! I have a question about your suits.");
+$("#marq").innerHTML=(function(){var t=["Free delivery over Rs. 10,000","Cash on Delivery","Easypaisa and JazzCash","7-day exchange","New season arrivals"],s="";for(var i=0;i<2;i++)t.forEach(function(x){s+="<span>"+x+"</span><span>✦</span>"});return s+s})();
+$("#cats").innerHTML=CATS.map(function(c){return '<a class="cat" href="#collection" data-cat="'+c[0]+'"><div class="arch" data-label="'+c[0]+'">'+img(c[2])+'</div><h3>'+c[0]+'</h3><span>'+c[1]+'</span></a>'}).join("");
+$("#featured").innerHTML=P.slice(0,4).map(cardHTML).join("");
+$("#gal").innerHTML=[1,2,3,4,5,6].map(function(n){return '<div class="ph" data-label="">'+img("p"+n)+'</div>'}).join("");
+$("#cartBtn").onclick=function(){openCart(true)};$("#cartX").onclick=$("#ov").onclick=function(){openCart(false);openSide(false);closeQV()};
+$("#cartBody").addEventListener("click",function(e){var q=e.target.closest("[data-q]"),r=e.target.closest("[data-rm]");
+  if(q){var i=cart[q.getAttribute("data-k")];i.qty+=+q.getAttribute("data-q");if(i.qty<1)cart.splice(q.getAttribute("data-k"),1);else if(i.qty>byId(i.id).stock[i.size]){i.qty--;toast("No more stock in this size")}saveCart()}
+  if(r){cart.splice(r.getAttribute("data-rm"),1);saveCart()}});
+$("#cartGo").addEventListener("click",function(){openCart(false)});
+$("#chips").onclick=function(e){var c=e.target.closest(".chip");if(c){state.cat=c.getAttribute("data-cat");drawCollection()}};
+$("#sort").onchange=function(e){state.sort=e.target.value;drawCollection()};
+$("#search").oninput=function(e){state.q=e.target.value.toLowerCase().trim();drawCollection()};
+$$(".hs").forEach(function(f){f.onsubmit=function(e){e.preventDefault();var i=f.querySelector("input");state.q=i.value.toLowerCase().trim();state.cat="All";i.value="";go("collection")}});
+/* sale countdown */
+var END=+ls("sahar_end");if(!END||END<Date.now()){END=Date.now()+(2*864e5+5*36e5);ls("sahar_end",END)}
+function tick(){var d=Math.max(0,END-Date.now()),p=function(n){return String(n).padStart(2,"0")};
+  $("#cdD").textContent=p(Math.floor(d/864e5));$("#cdH").textContent=p(Math.floor(d%864e5/36e5));$("#cdM").textContent=p(Math.floor(d%36e5/6e4));$("#cdS").textContent=p(Math.floor(d%6e4/1e3))}
+tick();setInterval(tick,1000);
+/* ---- wishlist ---- */
+function wished(id){return wish.indexOf(+id)>-1}
+function updWish(){var b=$("#wishCount");b.textContent=wish.length;b.hidden=!wish.length}
+function toggleWish(id){id=+id;var i=wish.indexOf(id);if(i>-1){wish.splice(i,1);toast("Removed from wishlist")}else{wish.push(id);toast("Saved to your wishlist")}
+  ls("sahar_wish",JSON.stringify(wish));updWish();$$('.card[data-id="'+id+'"] .heart').forEach(function(h){h.classList.toggle("on",wished(id))});if(cur==="wishlist")drawWish()}
+function drawWish(){var l=P.filter(function(p){return wished(p.id)});
+  $("#wishGrid").innerHTML=l.length?l.map(cardHTML).join(""):'<div class="okbox"><h2>Your wishlist is empty</h2><p>Tap the heart on any suit to save it here.</p><a class="btn" href="#collection">Browse collection</a></div>'}
+/* ---- quick view ---- */
+function openQV(id){var p=byId(id),inc=/3 piece/.test(p.fab)?"Shirt, dupatta and trouser":"Shirt and trouser";
+  $("#qvBody").innerHTML='<div class="qv">'+cardHTML(p)+'<div class="qd"><h4>Details</h4><ul><li>Fabric: '+p.fab.split(",")[0]+'</li><li>Includes: '+inc+'</li><li>Care: dry clean recommended for embroidered pieces</li><li>Delivery: 3 to 5 working days, Cash on Delivery available</li><li>Exchange: within 7 days of delivery</li></ul></div></div>';
+  $("#qv").hidden=false;document.body.style.overflow="hidden"}
+function closeQV(){var q=$("#qv");if(q&&!q.hidden){q.hidden=true;document.body.style.overflow=""}}
+$("#qvX").onclick=closeQV;$("#qv").addEventListener("click",function(e){if(e.target===this)closeQV()});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"){closeQV();openCart(false);openSide(false)}});
+/* ---- side menu ---- */
+function openSide(v){$("#side").classList.toggle("show",v);$("#ov").classList.toggle("show",v)}
+$("#menuBtn").onclick=function(){openSide(true)};$("#sideX").onclick=function(){openSide(false)};
+$("#side").addEventListener("click",function(e){if(e.target.closest("a"))setTimeout(function(){openSide(false)},60)});
+$("#sideWa").href=$("#sizeWa").href=waLink("Hello! I need help with my size.");$("#sideWa").href=waLink("Hello! I have a question about your suits.");
+/* ---- orders + tracking ---- */
+function normPhone(p){var d=String(p).replace(/\D/g,"");if(d.indexOf("92")===0)d="0"+d.slice(2);return d}
+function getOrders(){try{return JSON.parse(ls("sahar_orders"))||[]}catch(e){return[]}}
+function saveOrder(o){var l=getOrders();l.push(o);ls("sahar_orders",JSON.stringify(l.slice(-20)))}
+$("#trackForm").addEventListener("submit",function(e){e.preventDefault();var f=e.target,id=f.elements.oid.value.trim().toUpperCase(),ph=normPhone(f.elements.tph.value),er={};
+  if(!/^SH-\d{4,}$/.test(id))er.oid="Enter your order number, like SH-123456.";if(!/^03\d{9}$/.test(ph))er.tph="Enter a valid mobile number.";
+  $$(".err",f).forEach(function(s){s.textContent=""});$$(".bad",f).forEach(function(x){x.classList.remove("bad")});
+  var k=Object.keys(er);k.forEach(function(n){f.elements[n].classList.add("bad");$('[data-e="'+n+'"]',f).textContent=er[n]});if(k.length)return;
+  var o=getOrders().filter(function(x){return x.id===id&&x.phone===ph})[0],r=$("#trackRes");r.hidden=false;
+  if(!o){r.innerHTML='<p><b>We could not find this order on this device.</b></p><p style="color:var(--mute);margin:8px 0 14px">Please check the order number and mobile number, or ask our team directly.</p><a class="btn gold" target="_blank" rel="noopener" href="'+waLink("Hello! Please update me on my order "+id)+'">Ask on WhatsApp</a>';return}
+  var h=(Date.now()-o.ts)/36e5,idx=h<1?0:h<12?1:h<36?2:h<96?3:4,S=["Order placed","Confirmed","Packed","Dispatched","Delivered"];
+  r.innerHTML='<p><b>Order '+o.id+'</b> &nbsp; '+money(o.total)+' &nbsp; '+o.city+'</p><p style="color:var(--mute)">Placed on '+new Date(o.ts).toLocaleString("en-PK",{dateStyle:"medium",timeStyle:"short"})+'</p><div class="tl">'+S.map(function(s,i){return '<div class="'+(i<=idx?"done":"")+(i===idx?" now":"")+'"><i>'+(i<=idx?"✓":i+1)+'</i>'+s+'</div>'}).join("")+'</div><a class="btn ghost" target="_blank" rel="noopener" href="'+waLink("Hello! Please update me on my order "+id)+'">Ask about this order</a>'});
+/* ---- newsletter ---- */
+$("#newsForm").addEventListener("submit",function(e){e.preventDefault();var v=$("#newsEm").value.trim();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v))return toast("Please enter a valid email");ls("sahar_news",v);$("#newsEm").value="";toast("Thank you for joining us!")});
+
+drawCart();updWish();initChat();route();
+</script>
+</body>
+</html>
